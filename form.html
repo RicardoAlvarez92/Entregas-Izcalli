@@ -74,29 +74,37 @@
             </div>
 
 <!-- FORMULARIO -->
+
             <div class="col-11 col-lg-6  mt-3 p-4 ">
                 <input class="form-control form-control-sm" type="tel" placeholder="Numero de Celular">
                 <input class="form-control form-control-sm" type="name" placeholder="Nombre y Apellido">
                 <input class="form-control form-control-sm " type="ubicacion" placeholder="Ubicación">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Lugar de la compra</label>
-                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-                      <option>PLaza San Miguel</option>
-                      <option>Plaza San Marcos</option>
-                      <option>Otros</option>
+
+                <form name="formulario1" class="form-group">
+                    <label for="exampleFormControlSelect1" >Lugar de la compra</label>
+                    <select class="form-control form-control-sm" name="lugarCompra" onchange="cambia()" id="exampleFormControlSelect1">
+                      <option value="0">Seleciona</option>
+                      <option value="1">PLaza San Miguel</option>
+                      <option value="2">Plaza San Marcos</option>
+                      <option value="3">Otros</option>
                     </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Establecimiento</label>
-                    <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-                        <option>Otros</option>
-                    </select>
-                  </div>
                 
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Establecimiento</label>
+                        <select class="form-control form-control-sm" onchange="imagen3()" id="exampleFormControlSelect1" name="locales">
+                            <option value="-"></option>
+                        </select>
+                    </div>
+                </form>
 
             </div>
         </div>
     </section>
+
+<!-- IMAGEN MENU -->
+    <div class="container-fluid d-flex justify-content-center">
+        <img id="imagen" src="" alt="Selecciona un Establecimiento">
+    </div>
 
 <!-- PIE DE PAGINA  -->
     <div class="card text-center mt-5" >
@@ -115,10 +123,16 @@
             ❈ En-Fa Izcalli ❈
         </div>
     </div>
-        
+       
+<!-- JS PAGINA FORM -->
+ <script src="./js/Form.js"></script>
+
 <!-- JS BOOTSTRAP 4 -->    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
