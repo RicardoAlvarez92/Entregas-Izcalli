@@ -1,3 +1,4 @@
+/* listas con los locales segun el lugar de compra*/
 var opt_1 = new Array("-","Burger King", "Dulce Crepa", "El Globo", "Kentucky Fried Chicken", "Pastes Kikos", "Pizza Hut", "Starbucks", "Sukiya");
 
 var opt_2 = new Array("-","Carls Jr","Casa de Toño", "Kentucky Fried Chicken", "Krispy Kreme", "Lucky Sushi", "Starbucks", "Sushi Itto");
@@ -26,7 +27,24 @@ function cambia(){
 
 }
 
+/* CAMBIA LA IMAGEN DE LOS MENUS SEGUN EL RESTAURANTE SELECIONADO EN EL SELECT */
+function cambiarImagen(){
+var optionValue= document.getElementById("slcLocales");
+var valueOption= optionValue.value;
+var imagenPrecio= document.getElementById("imagen");
 
+/* OBJETO CON LA DIRECCION DE CADA IMAGEN SEGUN EL RESTAURANTE */
+var imagenesMenus = {
+    'Burger King': './img/burguer.webp',
+    'Dulce Crepa' : './img/crepa.jpg',
+    'El Globo': './img/globo.webp',
+    'Kentucky Fried Chicken':'./img/kfc.jfif'
+}
+const imagenDefault = "./img/LOGO DELIVERYzhzs.webp";
+
+const loki = imagenesMenus[valueOption] || imagenDefault;
+imagenPrecio.src =`${loki}`
+}
 
 
 
