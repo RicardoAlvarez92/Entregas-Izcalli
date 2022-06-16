@@ -144,7 +144,7 @@ function funcionRealSan(){
 }
 btnRealSan.addEventListener("click",funcionRealSan);
 
-    
+
 
 
 
