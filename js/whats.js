@@ -15,7 +15,7 @@ document.querySelector("#enviar_Whats").addEventListener("click", function(){
     let articulo1 = document.querySelector("#articulo_1").value;
     let articulo1Cantidad = document.querySelector("#art1_cant").value;
 
-    let url ="https://api.whatsapp.com/send?phone=5566937766&text=*Repartiflash*%0A*Reservas*%0A%0A*Nombre:*%0A" + celCliente + "SI FUNCIONA";
+    let url ="https://api.whatsapp.com/send?phone=5578215947&text=*Repartiflash*%0A*Reservas*%0A%0A*Nombre:*%0A" + celCliente + "SI FUNCIONA";
 
     window.open(url);
 })
