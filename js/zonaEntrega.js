@@ -1,5 +1,5 @@
 /* VARIABLE QUE ALMACENA EL INPUT A MODIFICAR */
-let inputU = document.getElementById("ubicacion-input");
+let inputU = document.getElementById("ubi_inpu");
 
 /* VARIABLE Y FUNCION QUE MODIFICA EL INPUT DE UBICACION AL HACER CLICK :  */
 
@@ -7,8 +7,7 @@ let inputU = document.getElementById("ubicacion-input");
 let btnCof124 =document.getElementById("btn_cof124");
 
 function funcionCof124(){
-    let placeCof124 = btnCof124.innerHTML;
-    inputU.placeholder = `${placeCof124}`;
+    inputU.value = `${btnCof124.innerHTML}`;
 }
 
 btnCof124.addEventListener("click",funcionCof124);
@@ -17,8 +16,7 @@ btnCof124.addEventListener("click",funcionCof124);
 let btnClaustros =document.getElementById("btn_claustros");
 
 function funcionClaustros(){
-    let placeClaustros = btnClaustros.innerHTML;
-    inputU.placeholder = `${placeClaustros}`;
+    inputU.value = `${btnClaustros.innerHTML}`;
 }
 btnClaustros.addEventListener("click",funcionClaustros);
 
@@ -26,8 +24,7 @@ btnClaustros.addEventListener("click",funcionClaustros);
 let btnUrbi =document.getElementById("btn_urbi");
 
 function funcionUrbi(){
-    let placeUrbi = btnUrbi.innerHTML;
-    inputU.placeholder = `${placeUrbi}`;
+    inputU.value = `${btnUrbi.innerHTML}`;
 }
 btnUrbi.addEventListener("click",funcionUrbi);
 
@@ -35,8 +32,7 @@ btnUrbi.addEventListener("click",funcionUrbi);
 let btnJardines3 =document.getElementById("btn_jardines3");
 
 function funcionJardines3(){
-    let placeJardines3 = btnJardines3.innerHTML;
-    inputU.placeholder = `${placeJardines3}`;
+    inputU.value = `${btnJardines3.innerHTML}`;
 }
 btnJardines3.addEventListener("click",funcionJardines3);
 
@@ -44,8 +40,7 @@ btnJardines3.addEventListener("click",funcionJardines3);
 let btnCof3 =document.getElementById("btn_cof3");
 
 function funcionCof3(){
-    let placeCof3 = btnCof3.innerHTML;
-    inputU.placeholder = `${placeCof3}`;
+    inputU.value = `${btnCof3.innerHTML}`;
 }
 btnCof3.addEventListener("click",funcionCof3);
 
@@ -54,8 +49,7 @@ btnCof3.addEventListener("click",funcionCof3);
 let btnRinconada =document.getElementById("btn_rinconada");
 
 function funcionRinconada(){
-    let placeRinconada = btnRinconada.innerHTML;
-    inputU.placeholder = `${placeRinconada}`;
+    inputU.value = `${btnRinconada.innerHTML}`;
 }
 btnRinconada.addEventListener("click",funcionRinconada);
 
@@ -63,8 +57,7 @@ btnRinconada.addEventListener("click",funcionRinconada);
 let btnExHcienda =document.getElementById("btn_exHacienda");
 
 function funcionExHcienda(){
-    let placeExHacienda = btnExHcienda.innerHTML;
-    inputU.placeholder = `${placeExHacienda}`;
+    inputU.value = `${btnExHcienda.innerHTML}`;
 }
 btnExHcienda.addEventListener("click",funcionExHcienda);
 
@@ -72,8 +65,7 @@ btnExHcienda.addEventListener("click",funcionExHcienda);
 let btnBos2 =document.getElementById("btn_bos2");
 
 function funcionBos2(){
-    let placeBos2 = btnBos2.innerHTML;
-    inputU.placeholder = `${placeBos2}`;
+    inputU.value = `${btnBos2.innerHTML}`;
 }
 btnBos2.addEventListener("click",funcionBos2);
 
@@ -81,8 +73,7 @@ btnBos2.addEventListener("click",funcionBos2);
 let btnJarHda =document.getElementById("btn_jarHda");
 
 function funcionJarHda(){
-    let placeJarHda = btnJarHda.innerHTML;
-    inputU.placeholder = `${placeJarHda}`;
+    inputU.value = `${btnJarHda.innerHTML}`;
 }
 btnJarHda.addEventListener("click",funcionJarHda);
 
@@ -90,8 +81,7 @@ btnJarHda.addEventListener("click",funcionJarHda);
 let btnRealSan =document.getElementById("btn_realSan");
 
 function funcionRealSan(){
-    let placeRealSan = btnRealSan.innerHTML;
-    inputU.placeholder = `${placeRealSan}`;
+    inputU.value = `${btnRealSan.innerHTML}`;
 }
 btnRealSan.addEventListener("click",funcionRealSan);
 

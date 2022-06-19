@@ -1,3 +1,5 @@
+/* ---------- COLOCAR EL LOCAL SEGUN EL LUGAR DE COMPRA  ---------- */
+
 
 /* listas con los locales segun el lugar de compra*/
 let opt_1 = new Array("-","Burger King", "Dulce Crepa", "El Globo", "Kentucky Fried Chicken", "Pastes Kikos", "Pizza Hut", "Starbucks", "Sukiya");
@@ -47,11 +49,108 @@ const loki = imagenesMenus[valueOption] || imagenDefault;
 imagenPrecio.src =`${loki}`
 }
 
+/* ---------- ZONA DE ENTREGA ---------- */
+/* VARIABLE QUE ALMACENA EL INPUT A MODIFICAR */
+let inputU = document.getElementById("ubi_inpu");
+
+/* VARIABLE Y FUNCION QUE MODIFICA EL INPUT DE UBICACION AL HACER CLICK :  */
+
+/* COFRADIA 124 */
+let btnCof124 =document.getElementById("btn_cof124");
+
+function funcionCof124(){
+    inputU.value = `${btnCof124.innerHTML}`;
+}
+
+btnCof124.addEventListener("click",funcionCof124);
+
+/* CLAUSTROS SAN MIGUEL */
+let btnClaustros =document.getElementById("btn_claustros");
+
+function funcionClaustros(){
+    inputU.value = `${btnClaustros.innerHTML}`;
+}
+btnClaustros.addEventListener("click",funcionClaustros);
+
+/* URBI QUINTA */
+let btnUrbi =document.getElementById("btn_urbi");
+
+function funcionUrbi(){
+    inputU.value = `${btnUrbi.innerHTML}`;
+}
+btnUrbi.addEventListener("click",funcionUrbi);
+
+/* JARDINES SAN MIGUEL 3 */
+let btnJardines3 =document.getElementById("btn_jardines3");
+
+function funcionJardines3(){
+    inputU.value = `${btnJardines3.innerHTML}`;
+}
+btnJardines3.addEventListener("click",funcionJardines3);
+
+/* COFRADIA 3 */
+let btnCof3 =document.getElementById("btn_cof3");
+
+function funcionCof3(){
+    inputU.value = `${btnCof3.innerHTML}`;
+}
+btnCof3.addEventListener("click",funcionCof3);
 
 
+/* RINCONADA CUAUTITLAN*/
+let btnRinconada =document.getElementById("btn_rinconada");
 
+function funcionRinconada(){
+    inputU.value = `${btnRinconada.innerHTML}`;
+}
+btnRinconada.addEventListener("click",funcionRinconada);
 
+/* EX HACIENDA SAN MIGUEL*/
+let btnExHcienda =document.getElementById("btn_exHacienda");
 
+function funcionExHcienda(){
+    inputU.value = `${btnExHcienda.innerHTML}`;
+}
+btnExHcienda.addEventListener("click",funcionExHcienda);
+
+/* BOSQUES 2DA*/
+let btnBos2 =document.getElementById("btn_bos2");
+
+function funcionBos2(){
+    inputU.value = `${btnBos2.innerHTML}`;
+}
+btnBos2.addEventListener("click",funcionBos2);
+
+/* JARDINES DE LAHACIENDA*/
+let btnJarHda =document.getElementById("btn_jarHda");
+
+function funcionJarHda(){
+    inputU.value = `${btnJarHda.innerHTML}`;
+}
+btnJarHda.addEventListener("click",funcionJarHda);
+
+/* REAL DE SAN JUAN*/
+let btnRealSan =document.getElementById("btn_realSan");
+
+function funcionRealSan(){
+    inputU.value = `${btnRealSan.innerHTML}`;
+}
+btnRealSan.addEventListener("click",funcionRealSan);
+
+/* ---------- CODIGO PARA ENVIAR WHATS ---------- */
+
+document.querySelector("#enviar_Whats").addEventListener("click", function(){
+    let nomCliente = document.querySelector("#nom_cliente").value;
+   /*  let ubicacioninput = document.querySelector("#ubicacion_Input").placeholder.innerHTML; */ 
+    let lugarCompraWhats = lugarCompra;
+    let local = valueOption;
+    let articulo1 = document.querySelector("#articulo_1").value;
+    let articulo1Cantidad = document.querySelector("#art1_cant").value;
+
+    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash*%0A*Confirmacion de orden*%0A%0A*Nombre*%0A" + nomCliente + "*%0A%0A*Lugar de compra*%0A" +lugarCompra+ "*%0A%0A* Local: *%0A" +local+ "*%0A%0A* Articulos:*%0A" +articulo1;
+
+    window.open(url);
+})
 
 
 
