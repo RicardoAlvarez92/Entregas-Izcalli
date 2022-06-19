@@ -139,18 +139,25 @@ btnRealSan.addEventListener("click",funcionRealSan);
 
 /* ---------- CODIGO PARA ENVIAR WHATS ---------- */
 
+
 document.querySelector("#enviar_Whats").addEventListener("click", function(){
     let nomCliente = document.querySelector("#nom_cliente").value;
-   /*  let ubicacioninput = document.querySelector("#ubicacion_Input").placeholder.innerHTML; */ 
-    let lugarCompraWhats = lugarCompra;
-    let local = valueOption;
-    let articulo1 = document.querySelector("#articulo_1").value;
-    let articulo1Cantidad = document.querySelector("#art1_cant").value;
-
-    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash*%0A*Confirmacion de orden*%0A%0A*Nombre*%0A" + nomCliente + "*%0A%0A*Lugar de compra*%0A" +lugarCompra+ "*%0A%0A* Local: *%0A" +local+ "*%0A%0A* Articulos:*%0A" +articulo1;
+    let local = slcLocales.value;
+    /* variable removible se usa para darle texto al lugar de compra */
+    let lita = ["--","Plaza San Miguel", "Plaza San Marcos", "Otros"];
+    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zona_de Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lita[lugar_compra.value]+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A"+ art1_cant.value + " " +articulo_1.value ;
 
     window.open(url);
-})
+});
+
+
+/* cel_cliente
+nom_cliente
+ubicacionInput
+lugar_compra
+slcLocales
+articulo_1
+art1_cant */
 
 
 
