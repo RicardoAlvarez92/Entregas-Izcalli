@@ -80,9 +80,9 @@
                     <label class="mt-3" for="exampleFormControlSelect1" >Lugar de la compra</label>
                     <select  class="form-control form-control-sm" name="lugarCompra" onchange="cambia()" id="lugar_compra">
                       <option value="0">Seleciona</option>
-                      <option value="1">PLaza San Miguel</option>
-                      <option value="2">Plaza San Marcos</option>
-                      <option value="3">Otros</option>
+                      <option value="Plaza_San_Miguel">PLaza San Miguel</option>
+                      <option value="Plaza_San_Marcos">Plaza San Marcos</option>
+                      <option value="Otros">Otros</option>
                     </select>
                 
                     <div class="form-group">
@@ -106,19 +106,20 @@
             </div>
 
 <!-- FORMULARIO PARA ESCRIBIR LOS PRODUCTOS -->
-            <div id="lis_produ" class="container form-group col-lg-6">
+            <div id="cont_arts" class="container form-group col-lg-6">
                <label for="articulos">¿Que articulos te gustaria que Compraramos?</label>
                 
-               <div class="row justify-content-around">
-                    <input id="articulo_1" class=" col-8 form-control form-control-sm mt-3 " type="text" placeholder="Articulo 1">
-
-                    <input id="art1_cant" class=" col-1 form-control form-control-sm mt-3 " type="text" placeholder="1">
+               <div id="list_art" class="fila_art row justify-content-around">
+                    <input id="articulo_1" class="col-8 form-control form-control-sm mt-3" type="text" placeholder="Nuevo Articulo">
+                    <input id="art1_cant" class="col-1 form-control form-control-sm mt-3 " type="text">
                 </div>
-                
+ 
             </div>
 <!-- BOTON PARA AGREGAR MAS ARTICULOS -->
-            <div class="container d-flex justify-content-center">
-                <button id="btn-agregar" class="btn">
+            <div  class="container d-flex justify-content-center">
+
+
+                <button id="btn_add" class="btn_add" onclick="adderirArticulo()">
                     <img src="./img/iconos/add.png" alt="">
                 </button>
             </div>
@@ -152,10 +153,9 @@
     </div>
        
 <!-- JS PAGINA FORM -->
-   <!--  <script src="./js/whats.js"></script>  -->
-    <!-- <script src="./js/add.js"></script> -->
+    <script src="./js/add.js"></script>
     <script src="./js/Form.js"></script>
- <!--    <script src="./js/zonaEntrega.js"></script>  -->
+ 
 
 <!-- JS BOOTSTRAP 4 -->    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

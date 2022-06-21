@@ -2,20 +2,24 @@
 
 
 /* listas con los locales segun el lugar de compra*/
-let opt_1 = new Array("-","Burger King", "Dulce Crepa", "El Globo", "Kentucky Fried Chicken", "Pastes Kikos", "Pizza Hut", "Starbucks", "Sukiya");
+let opt_Plaza_San_Miguel = new Array("-","Burger King", "Dulce Crepa", "El Globo", "Kentucky Fried Chicken", "Pastes Kikos", "Pizza Hut", "Starbucks", "Sukiya");
 
-let opt_2 = new Array("-","Carls Jr","Casa de Toño", "Kentucky Fried Chicken", "Krispy Kreme", "Lucky Sushi", "Starbucks", "Sushi Itto");
+let opt_Plaza_San_Marcos = new Array("-","Carls Jr","Casa de Toño", "Kentucky Fried Chicken", "Krispy Kreme", "Lucky Sushi", "Starbucks", "Sushi Itto");
 
-let opt_3 = new Array("-","Tienda Local", "Tortas La Cabañita", "Taqueria el Buen Pastor", "Crepas Luces y Acción", "Walmart", "Soriana");
+let opt_Otros = new Array("-","Tienda Local", "Tortas La Cabañita", "Taqueria el Buen Pastor", "Crepas Luces y Acción", "Walmart", "Soriana");
 
+/* let prueba = document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].innerHTML;
+console.log(prueba);
+ */
 function cambia(){
-    let lugarCompra;
-    lugarCompra =document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].value;
+
+    let lugarCompra =document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].value;
 
     if(lugarCompra != 0){
         mis_opts= eval("opt_"+ lugarCompra);
         num_opts=mis_opts.length;
         document.formulario1.locales.length = num_opts;
+        
 
         for(i=0; i < num_opts; i++){
             document.formulario1.locales.options[i].value=mis_opts[i];
@@ -143,9 +147,8 @@ btnRealSan.addEventListener("click",funcionRealSan);
 document.querySelector("#enviar_Whats").addEventListener("click", function(){
     let nomCliente = document.querySelector("#nom_cliente").value;
     let local = slcLocales.value;
-    /* variable removible se usa para darle texto al lugar de compra */
-    let lita = ["--","Plaza San Miguel", "Plaza San Marcos", "Otros"];
-    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zona_de Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lita[lugar_compra.value]+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A"+ art1_cant.value + " " +articulo_1.value ;
+    let lCom = document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].innerHTML;
+    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zona_de Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lCom+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A"+ art1_cant.value + " " +articulo_1.value ;
 
     window.open(url);
 });
