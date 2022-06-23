@@ -42,10 +42,14 @@ let imagenPrecio= document.getElementById("imagen");
 
 /* OBJETO CON LA DIRECCION DE CADA IMAGEN SEGUN EL RESTAURANTE */
 let imagenesMenus = {
-    'Burger King': './img/burguer.webp',
-    'Dulce Crepa' : './img/crepa.jpg',
+    'Burger King': './img/menus/burguer_1.jpeg',
+    'Dulce Crepa' : './img/menus/dulce_crepa.jpg',
     'El Globo': './img/globo.webp',
-    'Kentucky Fried Chicken':'./img/kfc.jfif'
+    'Kentucky Fried Chicken':'./img/menus/kfc_2.jpeg',
+    'Pastes Kikos':'./img/menus/pastes_k.jpeg',
+    'Starbucks':'./img/menus/starbucks.jpeg',
+    'Pizza Hut':'./img/menus/pizza hut.png',
+    'Sukiya':'./img/menus/sikiya.jpg'
 }
 const imagenDefault = "./img/LOGO DELIVERYzhzs.webp";
 
@@ -73,7 +77,7 @@ let btnClaustros =document.getElementById("btn_claustros");
 
 function funcionClaustros(){
     inputU.value = `${btnClaustros.innerHTML}`;
-}
+}                                                                                                           
 btnClaustros.addEventListener("click",funcionClaustros);
 
 /* URBI QUINTA */
@@ -141,27 +145,38 @@ function funcionRealSan(){
 }
 btnRealSan.addEventListener("click",funcionRealSan);
 
+ /*CODIGO PARA AGREGAR ARTICULOS EN UNA LISTA */
+
+function agregarArticulo(){
+    function Articulo(nombreArt, cantidadArt){
+        this.nombreArt = nombreArt;
+        this.cantidadArt = cantidadArt;
+    }
+    let nombreArticulo = document.getElementById("art_input").value;
+    let cantidadArticulo = document.getElementById("cant_input").value; 
+    /* VARIABLE GLOBAL QUE CREA NUEVO OBJETO */
+    nuevoArticulo = new Articulo(nombreArticulo, cantidadArticulo);
+    creaArrayList(); 
+}
+
+    listaArticulos = [];
+function creaArrayList(){
+   listaArticulos.push(nuevoArticulo);
+    document.getElementById("tabla_art").innerHTML += '<tbody><td>'+nuevoArticulo.nombreArt+'</td> <td>'+nuevoArticulo.cantidadArt+'</td></tbody>';
+    console.log(listaArticulos);
+};
+ 
 /* ---------- CODIGO PARA ENVIAR WHATS ---------- */
+document.querySelector("#enviar_Whats").addEventListener("click", function()
+{
 
-
-document.querySelector("#enviar_Whats").addEventListener("click", function(){
     let nomCliente = document.querySelector("#nom_cliente").value;
     let local = slcLocales.value;
     let lCom = document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].innerHTML;
-    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zona_de Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lCom+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A"+ art1_cant.value + " " +articulo_1.value ;
+let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zonade Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lCom+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A";
 
     window.open(url);
 });
-
-
-/* cel_cliente
-nom_cliente
-ubicacionInput
-lugar_compra
-slcLocales
-articulo_1
-art1_cant */
-
 
 
 
