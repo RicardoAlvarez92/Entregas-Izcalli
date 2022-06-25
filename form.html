@@ -49,21 +49,29 @@
                     </h5>
                     <div class="col-6 p-0 ">
                         <div  class="list-group">
-                            <button id="btn_cof124"  class="list-group-item list-group-item-action">Cofradia San Miguel I - II - IV</button>
-                            <button id="btn_claustros" href="#" class="list-group-item list-group-item-action"> Claustros de San Miguel </button>
-                            <button id="btn_urbi" href="#" class="list-group-item list-group-item-action">Urbi Quinta </button>
-                            <button id="btn_jardines3" href="#" class="list-group-item list-group-item-action">Jardines de San miguel III</button>
-                            <button id="btn_cof3"class="list-group-item list-group-item-action">Cofradia San Miguel III</button>
+                            <button id="btn_cof124"  class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Cofradia San Miguel I - II - IV</button>
+
+                            <button id="btn_claustros" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)"> Claustros de San Miguel </button>
+
+                            <button id="btn_urbi" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Urbi Quinta </button>
+
+                            <button id="btn_jardines3" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Jardines de San miguel III</button>
+
+                            <button id="btn_cof3"class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Cofradia San Miguel III</button>
                         </div>
                     </div>
 
                     <div class="col-6 p-0">
                         <div class="list-group">
-                            <button id="btn_rinconada" href="#" class="list-group-item list-group-item-action">Rinconada Cuautitlan</button>
-                            <button id="btn_exHacienda" href="#" class="list-group-item list-group-item-action">Ex Hacienda San Miguel</button>
-                            <button id="btn_bos2" href="#" class="list-group-item list-group-item-action">Bosques Segunda</button>
-                            <button id="btn_jarHda" href="#" class="list-group-item list-group-item-action">Jardines de la Hacienda</button>
-                            <button id="btn_realSan" href="#" class="list-group-item list-group-item-action"> Residencial Real de San Juan </button>
+                            <button id="btn_rinconada" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Rinconada Cuautitlan</button>
+
+                            <button id="btn_exHacienda" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Ex Hacienda San Miguel</button>
+
+                            <button id="btn_bos2" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Bosques Segunda</button>
+
+                            <button id="btn_jarHda" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Jardines de la Hacienda</button>
+
+                            <button id="btn_realSan" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)"> Residencial Real de San Juan </button>
                         </div>
                     </div>
                 </div>
@@ -139,13 +147,11 @@
                     </thead>
                 </table>
 
-            </div> 
-
-            
+            </div>            
             
 <!-- BOTON PARA ENVIAR INFORMACION DEL FORMULARIO -->
             <div class="container mt-5 d-flex justify-content-center">
-                <button id="enviar_Whats" class=" btn btn-outline-dark" style="height: 60px;">Enviar Datos a Repartidor</button>
+                <button id="enviar_whats" class=" btn btn-outline-dark" style="height: 60px;">Enviar Datos a Repartidor</button>
             </div>
         </div> 
     </section>  
@@ -170,10 +176,18 @@
             ❈ En-Fa Izcalli ❈
         </div>
     </div>
+
+
+     <!-- JS SWEET ALERT 2 -->
+     <script src="./js/sweetAlert.js"></script>
+     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
        
 <!-- JS PAGINA FORM -->
     <!-- <script src="./js/add.js"></script> -->
     <script src="./js/Form.js"></script>
+
+
+   
  
 
 <!-- JS BOOTSTRAP 4 -->    
