@@ -1,5 +1,69 @@
-/* OBTIENE EL INNER HTML DEL BVOTON PULSADO EN ZONA DE ENTREGA */
+/* LLAMAMAOS AL ARCHIVO JSON BD */
+const listaRestaurantes = document.getElementById("lista_restaurantes");
+/* function traerDatos(){
+    fetch("./js/restaurantes.json")
+    .then(respuesta => respuesta.json())
+    .then(restaurantes => {
+        restaurantes.forEach(restaurant => {
 
+            const botonRestaurant =document.createElement("button");
+
+            botonRestaurant.setAttribute("class", "card col-4 container-fluid")
+
+            botonRestaurant.innerHTML +=
+            `<div class="row">
+                <h5 class="card-title col-12 mt-2">${restaurant.nombre}</h5>
+                <h6 class="card-title col-12">${restaurant.ubicacion}</h6>         
+                <div class="card-text col-12  "><small class="">Horario:</small></div>
+                <div class="card-text col-12 "><small class="">${restaurant.apertura} -- ${restaurant.cierre}</small></div>
+            </div>`
+             listaRestaurantes.appendChild(botonRestaurant);                  
+        })
+    })
+};
+
+ traerDatos();
+ */
+
+
+ /* prueba para imprimir por categoria si quieres imprimir todos es con un for each como el de arriba  */
+function cargarJson(){
+    fetch("./js/restaurantes.json")
+    .then(function(res){
+        return res.json();
+    })
+    .then (function(data){
+        for(i=0; i<data.length;i++){
+            if(data[i].categoria == "Pizza"){
+
+                const botonRestaurant =document.createElement("button");            
+
+                botonRestaurant.setAttribute("class", "card col-4 container-fluid")
+    
+                botonRestaurant.innerHTML +=
+                `<div class="row">   
+                    <h5 class="card-title col-12 mt-2">${data[i].nombre}</h5>
+                    <h6 class="card-title col-12">${data[i].ubicacion}</h6>         
+                    <div class="card-text col-12  "><small class="">Horario:</small></div>
+                    <div class="card-text col-12 "><small class="">${data[i].apertura} -- ${data[i].cierre}</small></div>
+                </div>`
+    
+               
+                 listaRestaurantes.appendChild(botonRestaurant); 
+
+
+            }else{
+                console.log("no es pizza");
+            }   
+        }
+        
+
+
+    })
+}
+cargarJson();
+
+/* OBTIENE EL INNER HTML DEL BVOTON PULSADO EN ZONA DE ENTREGA */
 let inputU = document.getElementById("ubi_inpu");
 function coloZonaEntrega(btnClickeado){
     valorBtnClickeado = btnClickeado.innerHTML;

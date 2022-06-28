@@ -1,0 +1,208 @@
+[
+    {
+        "id_restaurant":1,
+        "nombre": "Little Caesars",
+        "categoria":"Pizza",
+        "ubicacion":"Super Plaza Las Haciendas",
+        "imagen":"./img/portadaResta/little_caesar.jpg",
+        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"10:00",
+        "cierre":"21:30",
+        "menu":[
+            {
+                "titulo": "Pizza Peperoni",
+                "precio":89,
+                "descripcion":"Pizza grande de peperoni con base de salsa de tomate una mezcla de quesos mozzarella y muenster",
+                "imagen":""
+            },
+            {
+                "titulo": "Pizza 3 Meat Treat",
+                "precio":165,
+                "descripcion":"Pizza grande con tocino, peperoni y salchicha italiana, preparada con salsa de tomate y quesos mozzarella y muenster",
+                "imagen":""
+            },
+            {
+                "titulo": "Pizza Ultimate Supreme",
+                "precio":165,
+                "descripcion":"Pizza grande con peperoni, salchichaitaliana, champiñones, pimiento verde y cebolla preparada con salsa de tomate y quesos mozzarella y muenster",
+                "imagen":""
+            }
+        ]
+    },
+    {
+        "id_restaurant":2,
+        "nombre": "luces, Crepas, Acción",
+        "categoria":"Postres",
+        "ubicacion":"Cofradia IV",
+        "imagen":"./img/portadaResta/luces_crepas_accion.png",
+        "dias_ap":["Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"18:00",
+        "cierre":"22:00",
+        "menu":[
+            {
+                "titulo": "Crepa Dulce Trolls",
+                "precio":55,
+                "descripcion":"Nutella con fresa fresca",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce Bumblebee",
+                "precio":50,
+                "descripcion":"Durazno en almibar con lechera",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce E.T",
+                "precio":50,
+                "descripcion":"Cajeta con nuez",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce La Sirenita",
+                "precio":50,
+                "descripcion":"Zarzamora con Philadelphia",
+                "imagen":""
+            }
+        ]
+    },
+    {
+        "id_restaurant":3,
+        "nombre": "KFC",
+        "categoria":"Alitas",
+        "ubicacion":"Centro San Miguel",
+        "imagen":"./img/portadaResta/kfc.jpg",
+        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"11:00",
+        "cierre":"22:00",
+        "menu":[
+            {
+                "titulo": "Crepa Dulce Trolls",
+                "precio":55,
+                "descripcion":"Nutella con fresa fresca",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce Bumblebee",
+                "precio":50,
+                "descripcion":"Durazno en almibar con lechera",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce E.T",
+                "precio":50,
+                "descripcion":"Cajeta con nuez",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce La Sirenita",
+                "precio":50,
+                "descripcion":"Zarzamora con Philadelphia",
+                "imagen":""
+            }
+        ]
+    },
+    {
+        "id_restaurant":4,
+        "nombre": "Little Caesars",
+        "categoria":"Pizza",
+        "ubicacion":"Super Plaza Las Haciendas",
+        "imagen":"./img/portadaResta/little_caesar.jpg",
+        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"10:00",
+        "cierre":"21:30",
+        "menu":[
+            {
+                "titulo": "Pizza Peperoni",
+                "precio":89,
+                "descripcion":"Pizza grande de peperoni con base de salsa de tomate una mezcla de quesos mozzarella y muenster",
+                "imagen":""
+            },
+            {
+                "titulo": "Pizza 3 Meat Treat",
+                "precio":165,
+                "descripcion":"Pizza grande con tocino, peperoni y salchicha italiana, preparada con salsa de tomate y quesos mozzarella y muenster",
+                "imagen":""
+            },
+            {
+                "titulo": "Pizza Ultimate Supreme",
+                "precio":165,
+                "descripcion":"Pizza grande con peperoni, salchichaitaliana, champiñones, pimiento verde y cebolla preparada con salsa de tomate y quesos mozzarella y muenster",
+                "imagen":""
+            }
+        ]
+    },
+    {
+        "id_restaurant":5,
+        "nombre": "luces, Crepas, Acción",
+        "categoria":"Postres",
+        "ubicacion":"Cofradia IV",
+        "imagen":"./img/portadaResta/luces_crepas_accion.png",
+        "dias_ap":["Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"18:00",
+        "cierre":"22:00",
+        "menu":[
+            {
+                "titulo": "Crepa Dulce Trolls",
+                "precio":55,
+                "descripcion":"Nutella con fresa fresca",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce Bumblebee",
+                "precio":50,
+                "descripcion":"Durazno en almibar con lechera",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce E.T",
+                "precio":50,
+                "descripcion":"Cajeta con nuez",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce La Sirenita",
+                "precio":50,
+                "descripcion":"Zarzamora con Philadelphia",
+                "imagen":""
+            }
+        ]
+    },
+    {
+        "id_restaurant":6,
+        "nombre": "Sukiya",
+        "categoria":"Asiatica",
+        "ubicacion":"Centro San Miguel",
+        "imagen":"./img/portadaResta/kfc.jpg",
+        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "apertura":"11:00",
+        "cierre":"22:00",
+        "menu":[
+            {
+                "titulo": "Crepa Dulce Trolls",
+                "precio":55,
+                "descripcion":"Nutella con fresa fresca",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce Bumblebee",
+                "precio":50,
+                "descripcion":"Durazno en almibar con lechera",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce E.T",
+                "precio":50,
+                "descripcion":"Cajeta con nuez",
+                "imagen":""
+            },
+            {
+                "titulo": "Crepa Dulce La Sirenita",
+                "precio":50,
+                "descripcion":"Zarzamora con Philadelphia",
+                "imagen":""
+            }
+        ]
+    }
+]
+
+
