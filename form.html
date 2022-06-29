@@ -36,6 +36,8 @@
         </div>
     </nav>
 
+   
+
 <!-- ZONA DE ENTREGA Y CATEGORIAS -->
     <section class="container-fluid">
         <div class="row justify-content-center">
@@ -87,29 +89,29 @@
                         Categorias:
                     </h5>
                     <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-around mt-2">
-                        <button onclick="hola10(this.id)" id="Pizza" class="btn d-flex flex-column">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Pizza" class="btn d-flex flex-column">
                             <img class="img-fluid" src="./img/iconos/pizza.png" alt="Pizza" width="54"> 
                             <p class="container-fluid p-0">Pizza</p>              
                         </button>
-                        <button onclick="hola10(this.id)" id="Asiatica" class="btn d-flex flex-column ">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Asiatica" class="btn d-flex flex-column ">
                             <img class="img-fluid" src="./img/iconos/sushi.png" alt="Asiatica" width="54"> 
                             <p class="container-fluid p-0">Asiatica</p>              
                         </button>
-                        <button onclick="hola10(this.id)" id="Alitas" class="btn d-flex flex-column">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Alitas" class="btn d-flex flex-column">
                             <img class="img-fluid" src="./img/iconos/alitas2.png" alt="Alitas" width="54"> 
                             <p class="container-fluid p-0">Alitas</p>              
                         </button>
                     </div>    
                     <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-around mt-2">  
-                        <button onclick="hola10(this.id)" id="Postres" class="btn d-flex flex-column">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Postres" class="btn d-flex flex-column">
                             <img class="img-fluid" src="./img/iconos/postre2.png" alt="Postres" width="54"> 
                             <p class="container-fluid p-0">Postres</p>              
                         </button>
-                        <button onclick="hola10(this.id)" id="Mexicana" class="btn d-flex flex-column">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Mexicana" class="btn d-flex flex-column">
                             <img class="img-fluid" src="./img/iconos/taco.png" alt="Mexicana" width="54"> 
                             <p class="container-fluid p-0">Mexicana</p>              
                         </button>
-                        <button onclick="hola10(this.id)" id="Todo" class="btn d-flex flex-column">
+                        <button onclick="mostrarCategoriaSelec(this.id)" id="Todo" class="btn d-flex flex-column">
                             <img class="img-fluid" src="./img/iconos/todo.png" alt="Todo" width="54"> 
                             <p class="container-fluid p-0">Todo</p>              
                         </button>
@@ -118,14 +120,22 @@
             </div>
         </div>
     </section>
+
+    
+
+    
              
 <!-- CONTENEDOR PARA LISTA DE RESTAURANTES Y LISTA DE ARTICULOS A COMPRAR-->   
     <section class="container-fluid bg-white mt-5">
 <!-- LISTA DE RESTAURANTES -->        
-        <div id="lista_restaurantes" class="row">
-            <h5 class="card-title col-12 mt-3 ">
+        <div id="lista_restaurantes" class="row p-0">
+            <h5 id="selec_menu" class="card-title col-12 mt-3 p-0 ">
                 Elige Restaurante:
             </h5>
+
+
+            </div>
+
         </div>
 <!-- TABLA LISTA DE ARTIULOS A COMPRAR -->
         <div class="container-fluid my-5">
