@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>En-Fa Formulario de servicio </title>
 </head>
 <body style="background-color: #eeeeee">
@@ -270,7 +270,7 @@
 <!-- CONTENEDOR PARA LISTA DE RESTAURANTES Y LISTA DE ARTICULOS A COMPRAR-->   
     <section class="container-fluid ">
 <!-- LISTA DE RESTAURANTES -->        
-        <div id="lista_restaurantes" class="row p-0 bg-white">
+        <div class="row p-0 bg-white">
 <!-- TITULO PARA LISTA DE RESTAURANTES SEGUN LA CATEGORIA ELEGIDA-->
             <div data-toggle="collapse" data-target="#listaRestaurantes" class="col-12 container-fluid mt-2">
                 <div class="row justify-content-end">
@@ -283,27 +283,26 @@
                 </div>
             </div>
 <!-- AQUI SE INSERTAN LOS BOTONES CON LA LISTA DE RESTAURANTES  --> 
-            <div class="col-12 container-fluid">
+            <div id="listaRestaurantes" class="collapse col-12 container-fluid">
                 <div class="row">
-
-                    
-                    <div class="col-12 col-md-6 col-lg-4 mt-2 "> 
+  
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
                         <button class="btn bg-white container-fluid border">  
                             <div class="row">
                                 <div class="col-4 d-flex justify-content-center align-items-center">
                                     <img class="img-fluid" src="./img/portadaResta/little_caesar.jpg" alt="kfc" width="90">
                                 </div>
                                 <div class="col-8 d-flex flex-column align-items-start">
-                                    <h5 class="">Kentucky Fried Chicken</h5>
-                                    <P class="m-0">Super Centro San Miguel</p>
+                                    <h5 class="">little Caesar</h5>
+                                    <P class="m-0">Super Plaza las Haciendas</p>
                                     <p class="m-0 text-muted">Horario Reparto:</p>
-                                    <p class="m-0 text-muted">Lunes a Viernes de 11:00 a 20:00</p>
+                                    <p class="m-0 text-muted">Lun - Vie   /  11:00 - 20:00</p>
                                 </div> 
                             </div>  
                         </button>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 mt-2 "> 
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
                         <button class="btn bg-white container-fluid border">  
                             <div class="row">
                                 <div class="col-4 d-flex justify-content-center align-items-center">
@@ -311,25 +310,73 @@
                                 </div>
                                 <div class="col-8 d-flex flex-column align-items-start">
                                     <h5 class="">Kentucky Fried Chicken</h5>
-                                    <P class="m-0">Super Centro San Miguel</p>
+                                    <P class="m-0">Centro San Miguel</p>
                                     <p class="m-0 text-muted">Horario Reparto:</p>
-                                    <p class="m-0 text-muted">Lunes a Viernes de 11:00 a 20:00</p>
+                                    <p class="m-0 text-muted">Lun - Vie / 12:00 - 20:00</p>
                                 </div> 
                             </div>  
                         </button>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-4 mt-2 "> 
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
                         <button class="btn bg-white container-fluid border">  
                             <div class="row">
                                 <div class="col-4 d-flex justify-content-center align-items-center">
-                                    <img class="img-fluid" src="./img/portadaResta/kfc.jpg" alt="kfc" width="90">
+                                    <img class="img-fluid" src="./img/portadaResta/pastes_kikos.png" alt="kfc" width="90">
                                 </div>
                                 <div class="col-8 d-flex flex-column align-items-start">
-                                    <h5 class="">Antojitos Mexicanos Mary</h5>
-                                    <P class="m-0">Super Centro San Miguel</p>
+                                    <h5 class="">Pastes Kikos</h5>
+                                    <P class="m-0">Centro San Miguel</p>
                                     <p class="m-0 text-muted">Horario Reparto:</p>
-                                    <p class="m-0 text-muted">Lunes a Viernes de 11:00 a 20:00</p>
+                                    <p class="m-0 text-muted">Lun - Vie / 12:00 - 20:00</p>
+                                </div> 
+                            </div>  
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
+                        <button class="btn bg-white container-fluid border">  
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="./img/portadaResta/luces_crepas_accion.png" alt="kfc" width="90">
+                                </div>
+                                <div class="col-8 d-flex flex-column align-items-start">
+                                    <h5 class="">luces, Crepas, Accion</h5>
+                                    <P class="m-0">Cofradia IV</p>
+                                    <p class="m-0 text-muted">Horario Reparto:</p>
+                                    <p class="m-0 text-muted">Mie - Vie   /  18:00 - 20:00</p>
+                                </div> 
+                            </div>  
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
+                        <button class="btn bg-white container-fluid border">  
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="./img/portadaResta/pastes_kero.png" alt="kfc" width="90">
+                                </div>
+                                <div class="col-8 d-flex flex-column align-items-start">
+                                    <h5 class="">Pastes Kero</h5>
+                                    <P class="m-0">Cofradia II</p>
+                                    <p class="m-0 text-muted">Horario Reparto:</p>
+                                    <p class="m-0 text-muted">Lun - Vier / 12:00 - 20:00</p>
+                                </div> 
+                            </div>  
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4 mt-2 "> 
+                        <button class="btn bg-white container-fluid border">  
+                            <div class="row">
+                                <div class="col-4 d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="./img/portadaResta/sukiya.jpg" alt="kfc" width="90">
+                                </div>
+                                <div class="col-8 d-flex flex-column align-items-start">
+                                    <h5 class="">Sukiya</h5>
+                                    <P class="m-0">Centro San Miguel</p>
+                                    <p class="m-0 text-muted">Horario Reparto:</p>
+                                    <p class="m-0 text-muted">Lun - Vie / 12:00 - 20:00</p>
                                 </div> 
                             </div>  
                         </button>
@@ -364,23 +411,58 @@
  
                     <div class="row justify-content-center ">
 <!-- crea un boton por cada articulo del menu segun su categoria -->
-                        <button class="col-11 border-0 mt-2">
-                             <div class="d-flex justify-content-between align-items-center">   
-                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                <p class="d-flex align-items-start mb-1 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                            </div>
-                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                            </p>  
-                        </button>
-                        <button class="col-11 border-0 mt-2">
-                            <div class="d-flex justify-content-between align-items-center">   
-                               <h5 class="d-flex mb-1 mt-2">Chick'n Share Pollo y Popcorn Chicken</h5>
-                               <p class="d-flex  mb-1 mt-2 badge-pill badge-warning justify-content-end"><span class="font-weight-bold">$165</span></p>
-                           </div>
-                           <p class="d-flex justify-content-start mt-0 font-italic">3 piezas de pollo + 1 popcorn chicken mediano
-                           </p>  
-                       </button>
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
 
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+
+                        
+
+                       
+                       
+                       
+                       
+                       
+                
 
                     </div>
                     
@@ -396,25 +478,53 @@
                 <div id="kfc2" class="collapse col-12 mt-1">
 
                     <div class="row justify-content-center ">
-                <!-- crea un boton por cada articulo del menu segun su categoria -->
-                        <button class="col-11 border-0 mt-2 ">
-                            <div class="d-flex justify-content-between align-items-center">   
-                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                <p class="d-flex align-items-start mb-1 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                            </div>
-                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                            </p>  
-                        </button>
-                        <button class="col-11 border-0 mt-2">
-                            <div class="d-flex justify-content-between align-items-center">   
-                            <h5 class="d-flex mb-1 mt-2">Chick'n Share Pollo y Popcorn Chicken</h5>
-                            <p class="d-flex  mb-1 mt-2 badge-pill badge-warning justify-content-end"><span class="font-weight-bold">$165</span></p>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
                         </div>
-                        <p class="d-flex justify-content-start mt-0 font-italic">3 piezas de pollo + 1 popcorn chicken mediano
-                        </p>  
-                    </button>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                                </p>  
+                            </button>
+                        </div>
+               
                     </div>
-                </div>
+                
 
             </div>
 
@@ -500,10 +610,9 @@
     <!-- <script src="./js/Form.js"></script> -->
     <script src="./js/form2.js"></script>
 
-<!-- JS BOOTSTRAP 4 -->    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- JS BOOTSTRAP 4.6 -->    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
 
 
