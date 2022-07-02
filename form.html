@@ -35,110 +35,356 @@
         </ul>
         </div>
     </nav>
-
-   
-
 <!-- ZONA DE ENTREGA Y CATEGORIAS -->
     <section class="container-fluid">
         <div class="row justify-content-center">
-<!-- SELECCIONAR ZONA DE ENTREGA -->
-            <div class="col-12 col-lg-7 bg-white pb-3">
+<!-- INICIA BLOQUE PARA ELEGIR ZONA DE ENTREGA -->
+            <div class="col-12 bg-white">
                 <div class="row">
-                    <h4 class="card-title col-12 mt-3">
-                        Zonas de cobertura
+<!-- TITULO zONAS DE ENTREGA -->
+                    <h4 class="card-title col-12 mt-1">
+                        Zonas de Entrega
                     </h4>
-                    <h5 class="card-title col-12 mb-3">
-                        Elige tu zona: 
-                    </h5>
-                    <div class="col-12 col-md-6">
-                        <div  class="list-group">
-                            <button id="btn_cof124"  class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Cofradia San Miguel I - II - IV</button>
-
-                            <button id="btn_claustros" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)"> Claustros de San Miguel </button>
-
-                            <button id="btn_urbi" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Urbi Quinta </button>
-
-                            <button id="btn_jardines3" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Jardines de San miguel III</button>
-
-                            <button id="btn_cof3"class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Cofradia San Miguel III</button>
+<!-- INICIA ZONA QUE OCULTA LOS BOTONES ALSELECCIONAR -->
+                    <div data-toggle="collapse" data-target="#zonaEntrega"  class="col-12 container-fluid">
+                        <div class="row justify-content-end">
+                            <h5 class="col-8 text-muted">
+                                Elige tu Zona:
+                            </h5>
+                            <div class="col-3 d-flex justify-content-center">
+                                <img class="" src="./img/iconos/icono-down.png" width="12" height="12"> 
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="list-group">
-                            <button id="btn_rinconada" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Rinconada Cuautitlan</button>
+<!-- ZONA DE BOTONES QUE SE OCULTA "COLLAPSE" DE ELIGE TU ZONA -->
+                    <div id="zonaEntrega" class="collapse col-12 mb-3"> 
+                        <div class="row">
 
-                            <button id="btn_exHacienda" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Ex Hacienda San Miguel</button>
+                            <div class="col-12 col-md-6 col-lg-4  ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/cofradia_1.png" alt="Cofradia I" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Cofradia San Miguel I</h5>
+                                </button>
+                            </div>  
+                            
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/cofradia_2.png" alt="Cofradia II" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Cofradia San Miguel II</h5>
+                                </button>
+                            </div>
+                            
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/cofradia_3.png" alt="Cofradia III" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Cofradia San Miguel III</h5>
+                                </button>
+                            </div> 
 
-                            <button id="btn_bos2" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Bosques Segunda</button>
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/cofradia_4.png" alt="Cofradia IV" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Cofradia San Miguel IV</h5>
+                                </button>
+                            </div>
 
-                            <button id="btn_jarHda" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)">Jardines de la Hacienda</button>
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/claustros.png" alt="Claustros San Miguel" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Claustros San Miguel</h5>
+                                </button>
+                            </div>
 
-                            <button id="btn_realSan" href="#" class="boton_zEntrega list-group-item list-group-item-action" onclick="coloZonaEntrega(this)"> Residencial Real de San Juan </button>
-                        </div>
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/urbi_quinta.png" alt="Urbi Quinta" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Urbi Quinta</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/jardines_1.png" alt="Jardines San Miguel I" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Jardines San Miguel I</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/jardines_2.png" alt="Jardines San Miguel II" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Jardines San Miguel II</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/jardines_3.png" alt="Jardines San Miguel III" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Jardines San Miguel III</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/ex_hacienda.png" alt="Ex Hacienda San Miguel" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Ex Hacienda San Miguel</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/arboledas.png" alt="Arboledas San Miguel" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Arboledas San Miguel</h5>
+                                </button>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <button class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                    <div class=" ">
+                                        <img class="img-fluid" src="./img/zonasEntrega/rinconada_cuauti.png" alt="Rinconada Cuautitlan" width="60">
+                                    </div>
+                                    <h5 class="ml-3">Rinconada Cuautitlan</h5>
+                                </button>
+                            </div>
+
+
+                        </div>  
                     </div>
-                </div>
-            </div>
-<!-- SELECCION DE RESTAURANTE -->
-            <div class="col-12 col-lg-5 container-fluid" >
+
+                </div><!-- row de borones -->
+
+
+            </div><!-- cierra div de botones -->
+
+<!-- ZONA PARA SELECCIONAR CATEGORIA, RESTAURANTE Y MENU-->
+            <div class="col-12 container-fluid" >
                 <div class="row justify-content-center ">
-                    <h4 class=" card-title col-12 mt-3 ">
+                    <h4 class=" card-title col-12 mt-1 ">
                         Selección de restaurante
                     </h4>
-                    <h5 class="card-title col-12 ">
-                        Categorias:
-                    </h5>
-                    <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-around mt-2">
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Pizza" class="btn d-flex flex-column">
-                            <img class="img-fluid" src="./img/iconos/pizza.png" alt="Pizza" width="54"> 
-                            <p class="container-fluid p-0">Pizza</p>              
-                        </button>
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Asiatica" class="btn d-flex flex-column ">
-                            <img class="img-fluid" src="./img/iconos/sushi.png" alt="Asiatica" width="54"> 
-                            <p class="container-fluid p-0">Asiatica</p>              
-                        </button>
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Alitas" class="btn d-flex flex-column">
-                            <img class="img-fluid" src="./img/iconos/alitas2.png" alt="Alitas" width="54"> 
-                            <p class="container-fluid p-0">Alitas</p>              
-                        </button>
-                    </div>    
-                    <div class="col-12 col-md-6 col-lg-12 d-flex justify-content-around mt-2">  
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Postres" class="btn d-flex flex-column">
-                            <img class="img-fluid" src="./img/iconos/postre2.png" alt="Postres" width="54"> 
-                            <p class="container-fluid p-0">Postres</p>              
-                        </button>
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Mexicana" class="btn d-flex flex-column">
-                            <img class="img-fluid" src="./img/iconos/taco.png" alt="Mexicana" width="54"> 
-                            <p class="container-fluid p-0">Mexicana</p>              
-                        </button>
-                        <button onclick="mostrarCategoriaSelec(this.id)" id="Todo" class="btn d-flex flex-column">
-                            <img class="img-fluid" src="./img/iconos/todo.png" alt="Todo" width="54"> 
-                            <p class="container-fluid p-0">Todo</p>              
-                        </button>
+                    <div data-toggle="collapse" data-target="#categorias"  class="col-12 container-fluid">
+                        <div class="row justify-content-end">
+                            <h5 class="col-8 text-muted">
+                                Categoria:
+                            </h5>
+                            <div class="col-3 d-flex justify-content-center">
+                                <img  src="./img/iconos/icono-down.png" width="12" height="12"> 
+                            </div>
+                        </div>
                     </div>
+
+
+                    <div id="categorias" class="collapse mt-2 mb-2 container">    
+                        <div class="row justify-content-center align-items-center ">
+                            
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Pizza" class="btn container-fluid ">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/pizza.png" alt="Pizza" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Pizza</p>              
+                                </button>
+                            </div>
+
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Mexicana" class="btn container-fluid ">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/mexicana.png" alt="Mexicana" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Mexicana</p>              
+                                </button>
+                            </div>
+
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Americana" class="btn container-fluid">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/americana.png" alt="Americana" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Americana</p>              
+                                </button>
+                            </div>
+
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Asiatica" class="btn container-fluid">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/asiatica.png" alt="Asiatica" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Asiatica</p>              
+                                </button>
+                            </div>
+
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Postres" class="btn container-fluid">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/postres.png" alt="Postres" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Postres</p>              
+                                </button>
+                            </div>
+
+                            <div class="col-4 col-4 col-lg-2 p-1 d-flex justify-content-center ">
+                                <button onclick="mostrarCategoriaSelec(this.id)" id="Todo" class="btn container-fluid">
+                                    <div class="">
+                                        <img class="img-fluid" src="./img/iconos/todo.png" alt="Todo" width="50">
+                                    </div> 
+                                    <p class=" m-0 ">Todo</p>              
+                                </button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                    
                 </div> 
             </div>
-        </div>
-    </section>
+        </div><!-- cierra row principal -->
+
+    </section> <!-- cierra seccion  -->
 
     
 
     
              
 <!-- CONTENEDOR PARA LISTA DE RESTAURANTES Y LISTA DE ARTICULOS A COMPRAR-->   
-    <section class="container-fluid bg-white mt-5">
+    <section class="container-fluid ">
 <!-- LISTA DE RESTAURANTES -->        
-        <div id="lista_restaurantes" class="row p-0">
-            <h5 id="selec_menu" class="card-title col-12 mt-3 p-0 ">
-                Elige Restaurante:
-            </h5>
-
-
+        <div id="lista_restaurantes" class="row p-0 bg-white">
+<!-- TITULO PARA LISTA DE RESTAURANTES SEGUN LA CATEGORIA ELEGIDA-->
+            <div class="col-12 container-fluid mt-2">
+                <div class="row justify-content-end">
+                    <h5 class="col-8 text-muted">
+                        Restaurante:
+                    </h5>
+                    <div class="col-3 d-flex justify-content-center ">
+                        <img class="d-none" src="./img/iconos/icono-down.png" width="12" height="12"> 
+                    </div>
+                </div>
+            </div>
+<!-- AQUI SE INSERTAN LOS BOTONES CON LA LISTA DE RESTAURANTES  --> 
+            <div class="col-12 col-md-6 col-lg-4 "> 
+                <button class="btn bg-white container-fluid ">
+      <!-- una mas sin el div -->   
+                    <div class="row">
+                        <div class="col-4 d-flex justify-content-center align-items-center">
+                            <img class="img-fluid" src="./img/portadaResta/little_caesar.jpg" alt="little caesar" width="90">
+                        </div>
+                        <div class="col-8 d-flex flex-column align-items-start">
+                            <h5 class="">Little Caesar</h5>
+                            <P class="m-0">Super Plaza las Haciendas</p>
+                            <p class="m-0 text-muted">Horario Reparto:</p>
+                            <p class="m-0 text-muted">Lunes a Viernes de 10:00 a 20:00</p>
+                        </div> 
+                    </div>  
+                </button>
             </div>
 
         </div>
+
+        <div id="lista_restaurantes" class="row p-0 pb-3 bg-white">
+<!-- SE MUESTRA EL MENU DEL RESTAURANTE SELECCIONADO -->
+                <div class="col-12 container-fluid mt-2">
+                    <div class="row justify-content-end">
+                        <h5 class="col-8 text-muted">
+                            Menu:
+                        </h5>
+                        <div class="col-3 d-flex justify-content-center ">
+                            <img class="d-none" src="./img/iconos/icono-down.png" width="12" height="12"> 
+                        </div>
+                    </div>
+                </div>
+<!-- collapese que se crea por cada categoria del menu del restaurante -->
+                <div data-toggle="collapse" data-target="#kfc1" class="card-header col-12 border d-flex justify-content-between align-items-center">
+                    <p class="d-flex align-items-center mb-0"><strong>Paquetes Clásicos</strong></p> 
+                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">
+                </div>
+
+                <div id="kfc1" class="collapse col-12 mt-1 pb-3">
+ 
+                    <div class="row justify-content-center ">
+<!-- crea un boton por cada articulo del menu segun su categoria -->
+                        <button class="col-11 border-0 mt-2">
+                             <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-1 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
+                        <button class="col-11 border-0 mt-2">
+                            <div class="d-flex justify-content-between align-items-center">   
+                               <h5 class="d-flex mb-1 mt-2">Chick'n Share Pollo y Popcorn Chicken</h5>
+                               <p class="d-flex  mb-1 mt-2 badge-pill badge-warning justify-content-end"><span class="font-weight-bold">$165</span></p>
+                           </div>
+                           <p class="d-flex justify-content-start mt-0 font-italic">3 piezas de pollo + 1 popcorn chicken mediano
+                           </p>  
+                       </button>
+
+
+                    </div>
+                    
+                </div>
+
+<!-- collapse para los menus segun por categorias del restaurante -->
+
+                <div data-toggle="collapse" data-target="#kfc2" class="card-header col-12 border d-flex justify-content-between align-items-center">
+                    <p class="d-flex align-items-center mb-0"><strong>Big Box</strong></p>
+                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">
+                </div>
+
+                <div id="kfc2" class="collapse col-12 mt-1">
+
+                    <div class="row justify-content-center ">
+                <!-- crea un boton por cada articulo del menu segun su categoria -->
+                        <button class="col-11 border-0 mt-2 ">
+                            <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-1 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
+                        <button class="col-11 border-0 mt-2">
+                            <div class="d-flex justify-content-between align-items-center">   
+                            <h5 class="d-flex mb-1 mt-2">Chick'n Share Pollo y Popcorn Chicken</h5>
+                            <p class="d-flex  mb-1 mt-2 badge-pill badge-warning justify-content-end"><span class="font-weight-bold">$165</span></p>
+                        </div>
+                        <p class="d-flex justify-content-start mt-0 font-italic">3 piezas de pollo + 1 popcorn chicken mediano
+                        </p>  
+                    </button>
+                    </div>
+                </div>
+
+            </div>
+
+
 <!-- TABLA LISTA DE ARTIULOS A COMPRAR -->
-        <div class="container-fluid my-5">
+       
+        <div class="container-fluid  mt-2 ">
+            <h4 class=" card-title  ">
+                Lista de Compras:
+            </h4>
             <table id="tabla_art" class="table">
                 <thead class="bg-dark text-light">
                     <tr>
@@ -186,7 +432,6 @@
         </div>
     </section>
 
-    <a href="javascript:window.open('./home.html','','width=400, height=500');">hola</a>
 
     
 
