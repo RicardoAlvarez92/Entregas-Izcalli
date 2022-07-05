@@ -26,7 +26,7 @@ function cargarJson(){
     .then(function(res){
         return res.json();
     })
-    .then (function(data){
+        
         for(i=0; i<data.length;i++){
 
             /* COMPARA EL ID DE LA CATEGORIA ELEGIDA Y MUESTRA EN PANTALLA LAS QUE TIENEN ELMISMO VALOR */
