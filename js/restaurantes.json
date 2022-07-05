@@ -11,7 +11,7 @@
         "menu":[
                 {
                     "categoriaMenu":"Pizzas",
-                    "Lista":[
+                    "lista":[
                             {
                                 "nombreArt": "Pizza Peperoni",
                                 "precio":89,
@@ -19,13 +19,13 @@
                                 "imagen":""
                             },
                             {
-                                "titulo": "Pizza 3 Meat Treat",
+                                "nombreArt": "Pizza 3 Meat Treat",
                                 "precio":165,
                                 "descripcion":"Pizza grande con tocino, peperoni y salchicha italiana, preparada con salsa de tomate y quesos mozzarella y muenster",
                                 "imagen":""
                             },
                             {
-                                "titulo": "Pizza Ultimate Supreme",
+                                "nombreArt": "Pizza Ultimate Supreme",
                                 "precio":165,
                                 "descripcion":"Pizza grande con peperoni, salchicha italiana, champiñones, pimiento verde y cebolla preparada con salsa de tomate y quesos mozzarella y muenster",
                                 "imagen":""
@@ -34,7 +34,7 @@
                 },
                 {
                     "categoriaMenu":"Complementos",
-                    "Lista":[
+                    "lista":[
                             {
                                 "nombreArt":"Crazy Bread",
                                 "precio" : 29,
@@ -118,150 +118,150 @@
         "menu":[
                 {
                     "categoriaMenu":"Crepas Dulces",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Crepa Dulce Scooby Doo",
+                                "nombreArt": "Crepa Dulce Scooby Doo",
                                 "precio":50,
                                 "descripcion":"Nutella",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Optimus Prime",
+                                "nombreArt": "Crepa Dulce Optimus Prime",
                                 "precio":55,
                                 "descripcion":"Philadelphia con cajeta",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Bumblebee",
+                                "nombreArt": "Crepa Dulce Bumblebee",
                                 "precio":55,
                                 "descripcion":"Durazno en almibar con lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce E.T",
+                                "nombreArt": "Crepa Dulce E.T",
                                 "precio":55,
                                 "descripcion":"Cajeta con nuez",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce La Sirenita",
+                                "nombreArt": "Crepa Dulce La Sirenita",
                                 "precio":55,
                                 "descripcion":"Philadelphia con mermelada de zarzamora",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Minion",
+                                "nombreArt": "Crepa Dulce Minion",
                                 "precio":55,
                                 "descripcion":"Nutella con Platano",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce La Bella",
+                                "nombreArt": "Crepa Dulce La Bella",
                                 "precio":55,
                                 "descripcion":"Philadelphia con nutella",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Drácula",
+                                "nombreArt": "Crepa Dulce Drácula",
                                 "precio":55,
                                 "descripcion":"Mermelada de fresa con philadelphia",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Trolls",
+                                "nombreArt": "Crepa Dulce Trolls",
                                 "precio":55,
                                 "descripcion":"Nutella con fresa fresca",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Rosita Fresita",
+                                "nombreArt": "Crepa Dulce Rosita Fresita",
                                 "precio":60,
                                 "descripcion":"Philadelphia, fresa fresca y lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Woody",
+                                "nombreArt": "Crepa Dulce Woody",
                                 "precio":60,
                                 "descripcion":"Philadelphia, nutella y platano",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Groot",
+                                "nombreArt": "Crepa Dulce Groot",
                                 "precio":60,
                                 "descripcion":"Philadelphia, nutella y chocolate cranky",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Snoopy",
+                                "nombreArt": "Crepa Dulce Snoopy",
                                 "precio":65,
                                 "descripcion":"Philadelphia, galleta óreo y lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Emoji",
+                                "nombreArt": "Crepa Dulce Emoji",
                                 "precio":65,
                                 "descripcion":"Philadelphia, durazno, lechera y rompope",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Pantera Rosa",
+                                "nombreArt": "Crepa Dulce Pantera Rosa",
                                 "precio":65,
                                 "descripcion":"Philadelphia, galleta óreo, fresa fresca y lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Intensamente",
+                                "nombreArt": "Crepa Dulce Intensamente",
                                 "precio":65,
                                 "descripcion":"Philadelphia, nutella, durazno en almibar y fresa fresca",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Toy Story",
+                                "nombreArt": "Crepa Dulce Toy Story",
                                 "precio":65,
                                 "descripcion":"Philadelphia, nutella, nuez, pasas, cacahuates y lunetas",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Free Souls",
+                                "nombreArt": "Crepa Dulce Free Souls",
                                 "precio":65,
                                 "descripcion":"Philadelphia, nutella, galleta óreo y lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Madagascar",
+                                "nombreArt": "Crepa Dulce Madagascar",
                                 "precio":65,
                                 "descripcion":"Philadelphia, nutella, lechera y un pastelito a escoger (gansito, pingüino o chocorrol)",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Maléfica",
+                                "nombreArt": "Crepa Dulce Maléfica",
                                 "precio":70,
                                 "descripcion":"Philadelphia, nutella, kinder delice y lechera",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Crepa Dulce Spider-Man",
+                                "nombreArt": "Crepa Dulce Spider-Man",
                                 "precio":65,
                                 "descripcion":"Nutella, fresa fresca y rayadura de chocolate turin",
                                 "imagen":""
@@ -282,45 +282,45 @@
         "menu":[
                 {
                     "categoriaMenu":"Paquetes Clasicos",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Paquete Clásico 8 Piezas",
+                                "nombreArt": "Paquete Clásico 8 Piezas",
                                 "precio":285,
                                 "descripcion":"8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paquete Clásico 10 Piezas",
+                                "nombreArt": "Paquete Clásico 10 Piezas",
                                 "precio":365,
                                 "descripcion":"10 piezas de pollo + 2 complementos familiares + 4 bísquets tradicionales",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paquete Clásico 12 Piezas",
+                                "nombreArt": "Paquete Clásico 12 Piezas",
                                 "precio":419,
                                 "descripcion":"12 piezas de pollo + 2 complementos familiares + 4 bísquets tradicionales",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paquete Clásico 14 Piezas ",
+                                "nombreArt": "Paquete Clásico 14 Piezas ",
                                 "precio":455,
                                 "descripcion":"14 piezas de pollo + 3 complementos familiares + 4 bísquets tradicionales",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paquete Clásico 16 Piezas",
+                                "nombreArt": "Paquete Clásico 16 Piezas",
                                 "precio":500,
                                 "descripcion":"16 piezas de pollo + 3 complementos familiares + 4 bísquets tradicionales",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paquete Clásico 18 Piezas ",
+                                "nombreArt": "Paquete Clásico 18 Piezas ",
                                 "precio":529,
                                 "descripcion":"18 piezas de pollo + 3 complementos familiares + 4 bísquets tradicionales",
                                 "imagen":""
@@ -329,17 +329,17 @@
                 },
                 {
                     "categoriaMenu":"Paquetes Variedad",
-                    "Lista":[
+                    "lista":[
                             {
                                     
-                                "titulo": "Paquete Mix",
+                                "nombreArt": "Paquete Mix",
                                 "precio":305,
                                 "descripcion":"5 piezas de pollo + 2 ke tiras + 2 complementos familiares + 1 hamburguesa kruncher",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Ke-tiras Lovers",
+                                "nombreArt": "Ke-tiras Lovers",
                                 "precio":285,
                                 "descripcion":"9 ke tiras + 1 papas familiares",
                                 "imagen":""
@@ -348,31 +348,31 @@
                 },
                 {
                     "categoriaMenu":"Chick'n Share",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Chick'n Share Pollo y Popcorn Chicken",
+                                "nombreArt": "Chick'n Share Pollo y Popcorn Chicken",
                                 "precio":185,
                                 "descripcion":"3 piezas de pollo + 1 popcorn chicken mediano",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Chick'n Share 6 Piezas",
+                                "nombreArt": "Chick'n Share 6 Piezas",
                                 "precio":185,
                                 "descripcion":"6 piezas de pollo",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Chick'n Share Mixto",
+                                "nombreArt": "Chick'n Share Mixto",
                                 "precio":185,
                                 "descripcion":"3 piezas de pollo + 3 ke tiras",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Chick'n Share 6 Ke Tiras",
+                                "nombreArt": "Chick'n Share 6 Ke Tiras",
                                 "precio":185,
                                 "descripcion":"6 ke tiras",
                                 "imagen":""
@@ -381,73 +381,73 @@
                 },
                 {
                     "categoriaMenu":"Box",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Box Pollo",
+                                "nombreArt": "Box Pollo",
                                 "precio":119,
                                 "descripcion":"2 piezas de pollo + 1 puré individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Box Ke Tiras",
+                                "nombreArt": "Box Ke Tiras",
                                 "precio":119,
                                 "descripcion":"2 ke tiras + 1 puré individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Box Hamburguesa Double Krunch",
+                                "nombreArt": "Box Hamburguesa Double Krunch",
                                 "precio":125,
                                 "descripcion":"1 hamburguesa double krunch + 1 ensalada de col individual + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Big Box Pollo",
+                                "nombreArt": "Big Box Pollo",
                                 "precio":139,
                                 "descripcion":"3 piezas de pollo + 1 ensalada de col individual + 1 puré individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Big Box Ke Tiras",
+                                "nombreArt": "Big Box Ke Tiras",
                                 "precio":139,
                                 "descripcion":"3 ke tiras + 1 puré individual + 1 ensalada de col individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Big Box Big Krunch",
+                                "nombreArt": "Big Box Big Krunch",
                                 "precio":149,
                                 "descripcion":"1 hamburguesa big krunch + 1 ensalada de col individual + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Mega Box Pollo",
+                                "nombreArt": "Mega Box Pollo",
                                 "precio":149,
                                 "descripcion":"4 piezas de pollo + 1 ensalada de col individual + 1 puré individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Mega Box Ke Tiras",
+                                "nombreArt": "Mega Box Ke Tiras",
                                 "precio":149,
                                 "descripcion":"4 ke tiras + 1 puré individual + 1 ensalada de col individual + 1 bísquet tradicional + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Mega Box Big Krunch + 1 Pieza de Pollo",
+                                "nombreArt": "Mega Box Big Krunch + 1 Pieza de Pollo",
                                 "precio":159,
                                 "descripcion":"1 hamburguesa big krunch + 1 pieza de pollo + 1 ensalada de col individual + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Mega Box Big Krunch + 1 Ke Tira",
+                                "nombreArt": "Mega Box Big Krunch + 1 Ke Tira",
                                 "precio":159,
                                 "descripcion":"1 hamburguesa big krunch + 1 ke tira + 1 ensalada de col individual + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
@@ -456,17 +456,17 @@
                 },
                 {
                     "categoriaMenu":"Popcorn Chicken",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Paquete Popcorn Chicken Mediano",
+                                "nombreArt": "Paquete Popcorn Chicken Mediano",
                                 "precio":105,
                                 "descripcion":"1 popcorn chicken mediano + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Paquete Popcorn Chicken Grande",
+                                "nombreArt": "Paquete Popcorn Chicken Grande",
                                 "precio":125,
                                 "descripcion":"1 popcorn chicken grande + 1 papas medianas + 1 refresco individual",
                                 "imagen":""
@@ -475,38 +475,38 @@
                 },
                 {
                     "categoriaMenu":"Extras",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "1 Pieza de Pollo",
+                                "nombreArt": "1 Pieza de Pollo",
                                 "precio":37,
                                 "descripcion":"1 pieza de pollo",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "1 Ke Tira",
+                                "nombreArt": "1 Ke Tira",
                                 "precio":37,
                                 "descripcion":"1 Ketira",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Hamburguesa Big Krunch 11 Chiles",
+                                "nombreArt": "Hamburguesa Big Krunch 11 Chiles",
                                 "precio":107,
                                 "descripcion":"hamburguesa big krunch 11 chiles",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Hamburguesa Double Krunch",
+                                "nombreArt": "Hamburguesa Double Krunch",
                                 "precio":85,
                                 "descripcion":"hamburguesa double krunch",
                                 "imagen":""
                             },
                             {
                             
-                                "titulo": "Hamburguesa Big Krunch",
+                                "nombreArt": "Hamburguesa Big Krunch",
                                 "precio":107,
                                 "descripcion":"hamburguesa big krunch",
                                 "imagen":""
@@ -527,80 +527,80 @@
         "menu":[
                 {
                     "categoriaMenu":"Pastes Salados",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Paste Salado Papa con Carne",
+                                "nombreArt": "Paste Salado Papa con Carne",
                                 "precio":20,
                                 "descripcion":"Relleno de papa con carne",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Hawaiano",
+                                "nombreArt": "Paste Salado Hawaiano",
                                 "precio":20,
                                 "descripcion":"Relleno de jamón y queso",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Salchicha, Jamón y Queso",
+                                "nombreArt": "Paste Salado Salchicha, Jamón y Queso",
                                 "precio":20,
                                 "descripcion":"Relleno de salchicha, jamón y queso ",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Mole Verde con Pollo",
+                                "nombreArt": "Paste Salado Mole Verde con Pollo",
                                 "precio":20,
                                 "descripcion":"Relleno de mole verde con pollo ",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Mole Rojo con Pollo",
+                                "nombreArt": "Paste Salado Mole Rojo con Pollo",
                                 "precio":20,
                                 "descripcion":"Relleno de mole Rojo con pollo ",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Tinga de Pollo",
+                                "nombreArt": "Paste Salado Tinga de Pollo",
                                 "precio":20,
                                 "descripcion":"Relleno tinga de pollo ",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Choriqueso con Piña",
+                                "nombreArt": "Paste Salado Choriqueso con Piña",
                                 "precio":20,
                                 "descripcion":"Relleno de choriqueso con piña",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Atún a la Mexicana",
+                                "nombreArt": "Paste Salado Atún a la Mexicana",
                                 "precio":18,
                                 "descripcion":"Relleno de atún a la mexicana",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Frijol con Chorizo",
+                                "nombreArt": "Paste Salado Frijol con Chorizo",
                                 "precio":18,
                                 "descripcion":"Relleno de frijol con chorizo",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Frijol Negro con Philadelphia",
+                                "nombreArt": "Paste Salado Frijol Negro con Philadelphia",
                                 "precio":18,
                                 "descripcion":"Relleno de frijol negro con philadelphia",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Salado Frijol",
+                                "nombreArt": "Paste Salado Frijol",
                                 "precio":18,
                                 "descripcion":"Relleno de frijol",
                                 "imagen":""
@@ -609,38 +609,38 @@
                 },
                 {
                     "categoriaMenu":"Pastes Dulces",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Paste Dulce Arroz con Leche",
+                                "nombreArt": "Paste Dulce Arroz con Leche",
                                 "precio":20,
                                 "descripcion":"Relleno de arroz con leche",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Dulce Zarzamora con Philadelphia",
+                                "nombreArt": "Paste Dulce Zarzamora con Philadelphia",
                                 "precio":20,
                                 "descripcion":"Relleno de zarzamora con philadelphia",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Dulce Fresa con Philadelphia",
+                                "nombreArt": "Paste Dulce Fresa con Philadelphia",
                                 "precio":20,
                                 "descripcion":"Relleno de fresa con philadelphia",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Dulce Cajeta con Nuez",
+                                "nombreArt": "Paste Dulce Cajeta con Nuez",
                                 "precio":20,
                                 "descripcion":"Relleno de cajeta con nuez",
                                 "imagen":""
                             },
                             {
                                 
-                                "titulo": "Paste Dulce Piña",
+                                "nombreArt": "Paste Dulce Piña",
                                 "precio":18,
                                 "descripcion":"Relleno de piña",
                                 "imagen":""
@@ -661,38 +661,38 @@
         "menu":[
                 {
                     "categoriaMenu":"Pastes Dulces",
-                    "Lista":[
+                    "lista":[
                             {
                                
-                                "titulo": "Paste Dulce Cajeta",
+                                "nombreArt": "Paste Dulce Cajeta",
                                 "precio":12,
                                 "descripcion":"Relleno de cajeta",
                                 "imagen":""
                             },
                             {
                                
-                                "titulo": "Paste Dulce Chocolate",
+                                "nombreArt": "Paste Dulce Chocolate",
                                 "precio":12,
                                 "descripcion":"Relleno de chocolate",
                                 "imagen":""
                             }, 
                             {
                                
-                                "titulo": "Paste Dulce Manzana",
+                                "nombreArt": "Paste Dulce Manzana",
                                 "precio":12,
                                 "descripcion":"Relleno de dulce de manzana",
                                 "imagen":""
                             }, 
                             {
                                
-                                "titulo": "Paste Dulce Arroz con Leche",
+                                "nombreArt": "Paste Dulce Arroz con Leche",
                                 "precio":12,
                                 "descripcion":"Relleno de arroz con leche",
                                 "imagen":""
                             }, 
                             {
                                
-                                "titulo": "Paste Dulce Crema Pastelera",
+                                "nombreArt": "Paste Dulce Crema Pastelera",
                                 "precio":12,
                                 "descripcion":"Relleno de crema pastelera",
                                 "imagen":""
@@ -701,38 +701,38 @@
                 },
                 {
                     "categoriaMenu":"Pastes Salados",
-                    "Lista":[
+                    "lista":[
                             {
                                 
-                                "titulo": "Paste Salado Tinga",
+                                "nombreArt": "Paste Salado Tinga",
                                 "precio":12,
                                 "descripcion":"Relleno de tinga",
                                 "imagen":""
                             }, 
                             {
                                 
-                                "titulo": "Paste Salado 3 Quesos",
+                                "nombreArt": "Paste Salado 3 Quesos",
                                 "precio":12,
                                 "descripcion":"Relleno de 3 quesos",
                                 "imagen":""
                             }, 
                             {
                                 
-                                "titulo": "Paste Salado Hawaiano",
+                                "nombreArt": "Paste Salado Hawaiano",
                                 "precio":12,
                                 "descripcion":"Relleno de jamón y queso",
                                 "imagen":""
                             }, 
                             {
                                 
-                                "titulo": "Paste Salado Choriqueso",
+                                "nombreArt": "Paste Salado Choriqueso",
                                 "precio":12,
                                 "descripcion":"Relleno de chorizo y queso",
                                 "imagen":""
                             }, 
                             {
                                 
-                                "titulo": "Paste Salado Mole Rojo",
+                                "nombreArt": "Paste Salado Mole Rojo",
                                 "precio":12,
                                 "descripcion":"Relleno de Cajeta",
                                 "imagen":""

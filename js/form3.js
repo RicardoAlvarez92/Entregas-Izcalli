@@ -80,7 +80,7 @@ function seleccionCategoria(CategoriaClickeada){
  /* Se cambia el valor de collapse-show a collapse en la calse del elemento para esconder los botones tras haber elegido categoria*/
  document.getElementById("categorias")
  .setAttribute("class", "collapse mt-2 mb-2 container"); 
-/* Quita el valor d-none para mostara la seiguiente seccion de pendiente------------ */
+/* Quita el valor d-none para mostara la seiguiente seccion de lista de restaurantes segun categoria elegida*/
   document.getElementById("contenedor_restaurantes")
  .setAttribute("class", " container-fluid") 
 /* funcion para elegir restaurates segun categoria elegida */
@@ -88,17 +88,14 @@ function seleccionCategoria(CategoriaClickeada){
   fetch(`./js/restaurantes.json`)
   .then(respuesta => respuesta.json())
   .then (restaurantes => 
-    restaurantes.forEach(restaurante => {
+    restaurantes.forEach(restaurante => {   
 
-      restxCategoria = restaurante.categoria;
-
-      if(restxCategoria == nombreCategoria){
-        creaBtnRest = () =>{
-        hola = document.getElementById("lista_restaurantes");
-        hola2 = document.createElement("div");
-        hola2.setAttribute("class", "col-12 col-md-6 col-xl-4 mt-2");
-        hola2.innerHTML += 
-        `<button class="btn bg-white container-fluid border">  
+      creaBtnRest = () =>{
+       let contListaRest = document.getElementById("lista_restaurantes");
+        btnNuevo = document.createElement("div");
+        btnNuevo.setAttribute("class", "col-12 col-md-6 col-xl-4 mt-2");
+        btnNuevo.innerHTML += 
+        `<button onclick="cargarMenuRest(this)" class="btn bg-white container-fluid border">  
             <div class="row">
                 <div class="col-4 d-flex justify-content-center align-items-center">
                     <img class="img-fluid" src=${restaurante.imagen} alt=${restaurante.nombre} width="90">
@@ -112,8 +109,11 @@ function seleccionCategoria(CategoriaClickeada){
             </div>  
           </button>` 
     
-        hola.appendChild(hola2); 
+        contListaRest.appendChild(btnNuevo); 
         }
+/* if que sirve como filtro para crear los botones segun la categoria elegida */
+      if(restaurante.categoria == nombreCategoria){
+        creaBtnRest();
       }else if(nombreCategoria == "Todo"){
           creaBtnRest();
       }else{
@@ -129,15 +129,19 @@ function limpiarListaRest(){
    if(limpiar.length != 0){
       i=0;
       while(i< limpiar.length){
-      hola.removeChild(limpiar.item(i));
+      contenedor.removeChild(limpiar.item(i));
       i=0;
   }
      }else{
       /* console.log("que siga la fiesta") */
-   } }
+   } 
+   /* mantiene el valor de la calse collapse-show al estar cambiando de categoria*/
+   document.getElementById("lista_restaurantes")
+   .setAttribute("class", "collapse-show row mb-3");
+  }
+
 limpiarListaRest();
 cargarRestaurantes();
-
 
   }
 

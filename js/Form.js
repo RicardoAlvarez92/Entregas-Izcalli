@@ -1,183 +1,111 @@
-/* LLAMAMAOS AL ARCHIVO JSON BD */
-const listaRestaurantes = document.getElementById("lista_restaurantes");
-/* function traerDatos(){
-    fetch("./js/restaurantes.json")
+/* funcion para uso general que crea el titulo de las secciones */
+tituloRest = (img, nombre,id) => {         
+    restElegido = document.createElement("div");
+    restElegido.setAttribute("id", id )
+    restElegido.setAttribute("class", "container-fluid d-flex justify-content-center align-items-center");
+    restElegido.innerHTML += 
+      `<div>
+          <img class="img-fluid" src=${img} alt=${nombre} width="60">
+      </div>
+      <h5 class="ml-3">
+          ${nombre}
+      </h5>`
+    contenedorVacio1.setAttribute("class", "col-12 mb-3 border")
+    contenedorVacio1.appendChild(restElegido);
+  }
+
+
+/*3.- FUNCION LISTA DE RESTAURANTES Y MENU*/
+function cargarMenuRest(rest){
+
+    nombreRest = rest.querySelector("h5").innerHTML;
+    imgRest = rest.querySelector("img").src;
+    idRest = "titulo_rest"
+
+    contenedorVacio1 = document.getElementById("contenedor_rest_vacio"); 
+    elementosContenedor = contenedorVacio1.children;
+    
+/* se usa el if para clocar un nuevo elemento como titulo si el valor del recorrido de los hijos del contenedor vacio es 0 o en caso contrario borrar al elemento creado que ocupo el titulo tras elegir Restaurante*/
+    if(elementosContenedor.length == 0){
+        tituloRest(imgRest, nombreRest, idRest);
+    }else{    
+        document.getElementById(idRest).remove();
+        tituloRest(imgRest, nombreRest,idRest);
+    }
+/* Se cambia el valor de collapse-show a collapse en la calse del elemento para esconder los botones tras haber elegido zona deentrega*/
+    document.getElementById("lista_restaurantes")
+    .setAttribute("class", "collapse row mb-3"); 
+/* Quita el valor d-none para mostara la seiguiente seccion de categorias */
+    document.getElementById("lista_menu")
+    .setAttribute("class", "row p-0 pb-3");
+
+/* ---------------------------------------------------------- */
+    fetch(`./js/restaurantes.json`)
     .then(respuesta => respuesta.json())
-    .then(restaurantes => {
-        restaurantes.forEach(restaurant => {
+    .then (restaurantes => 
+      restaurantes.forEach(restaurante => {
+        
+        if(restaurante.nombre == nombreRest){
+            menuRest = restaurante.menu;
 
-            const botonRestaurant =document.createElement("button");
+            menuRest.forEach(categoria =>{
+                listaCategoria = categoria.categoriaMenu;
+                artXcategoria = categoria.lista;
+                
+               let contenedor = document.getElementById("lista_menu");
+               let contListPlatillos = document.getElementById("categorias_menu_lista");
+ 
+                    categoriaMenu = document.createElement("div");
+                    categoriaMenu.setAttribute("data-toggle", "collapese");
+                    categoriaMenu.setAttribute("data-target", `#${listaCategoria}`);
+                    categoriaMenu.setAttribute("class", "card-header col-12 border d-flex justify-content-between align-items-center");
+                    categoriaMenu.innerHTML +=
+                    `<p class="d-flex align-items-center mb-0"><strong>${listaCategoria}</strong></p> 
+                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">`
 
-            botonRestaurant.setAttribute("class", "card col-4 container-fluid")
+                    contenedor.insertBefore(categoriaMenu, contListPlatillos);
 
-            botonRestaurant.innerHTML +=
-            `<div class="row">
-                <h5 class="card-title col-12 mt-2">${restaurant.nombre}</h5>
-                <h6 class="card-title col-12">${restaurant.ubicacion}</h6>         
-                <div class="card-text col-12  "><small class="">Horario:</small></div>
-                <div class="card-text col-12 "><small class="">${restaurant.apertura} -- ${restaurant.cierre}</small></div>
-            </div>`
-             listaRestaurantes.appendChild(botonRestaurant);                  
-        })
-    })
-};
+/* desde qui revisar */
+                      /*   platilloMenu = document.createElement("div");
+                        platilloMenu.setAttribute("id",listaCategoria);
+                        platilloMenu.setAttribute("class", "collapse-show row justify-content-center");
+                        platilloMenu.innerHTML +=
+                        `<div>hola</div>`
+                        contListPlatillos.appendChild(platilloMenu) */
 
- traerDatos();
- */
+                    /* artXcategoria.forEach(platillo =>{
 
+                        let contListPlatillos = document.getElementById("categorias_menu_lista");
 
- /* prueba para imprimir por categoria si quieres imprimir todos es con un for each como el de arriba  */
-function cargarJson(){
-    fetch("./js/restaurantes.json")
-    .then(function(res){
-        return res.json();
-    })
-    .then (function(data){
-        for(i=0; i<data.length;i++){
-            if(data[i].categoria == "Pizza"){
+                        platilloMenu = document.createElement("div");
+                        platilloMenu.setAttribute("id",listaCategoria);
+                        platilloMenu.setAttribute("class", "collapse-show row justify-content-center");
+                        platilloMenu.innerHTML +=
+                            `<div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                                <button class="btn container-fluid border rounded">
+                                    <div class="d-flex justify-content-between align-items-center">   
+                                        <h5 class="d-flex mb-1 mt-2 font-weight-bold">${platillo.nombreArt}</h5>
+                                        <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$${platillo.precio}</span></p>
+                                    </div>
+                                    <p class="d-flex justify-content-start mt-0 font-italic">${platillo.descripcion}
+                                    </p>  
+                                </button>
+                            </div>`
 
-                const botonRestaurant =document.createElement("button");            
-
-                botonRestaurant.setAttribute("class", "card col-4 container-fluid")
-    
-                botonRestaurant.innerHTML +=
-                `<div class="row">   
-                    <h5 class="card-title col-12 mt-2">${data[i].nombre}</h5>
-                    <h6 class="card-title col-12">${data[i].ubicacion}</h6>         
-                    <div class="card-text col-12  "><small class="">Horario:</small></div>
-                    <div class="card-text col-12 "><small class="">${data[i].apertura} -- ${data[i].cierre}</small></div>
-                </div>`
-    
-               
-                 listaRestaurantes.appendChild(botonRestaurant); 
-
-
-            }else{
-                console.log("no es pizza");
+                            contListPlatillos.appendChild(platilloMenu)
+                    }) */
+                    
+                /* console.log(menuRest.length); */    
             }   
-        }
-        
-
-
-    })
-}
-cargarJson();
-
-/* OBTIENE EL INNER HTML DEL BVOTON PULSADO EN ZONA DE ENTREGA */
-let inputU = document.getElementById("ubi_inpu");
-function coloZonaEntrega(btnClickeado){
-    valorBtnClickeado = btnClickeado.innerHTML;
-    inputU.value = `${valorBtnClickeado}`;
-} 
-
-/* ---------- COLOCAR EL LOCAL SEGUN EL LUGAR DE COMPRA  ---------- */
-
-/* listas con los locales segun el lugar de compra*/
-let opt_Plaza_San_Miguel = new Array("-","Burger King", "Dulce Crepa", "El Globo", "Kentucky Fried Chicken", "Pastes Kikos", "Pizza Hut", "Starbucks", "Sukiya");
-
-let opt_Plaza_San_Marcos = new Array("-","Carls Jr","Casa de Toño", "Kentucky Fried Chicken", "Krispy Kreme", "Lucky Sushi", "Starbucks", "Sushi Itto");
-
-let opt_Otros = new Array("-","Tienda Local", "Tortas La Cabañita", "Taqueria el Buen Pastor", "Crepas Luces y Acción", "Walmart", "Soriana");
-
-/* let prueba = document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].innerHTML;
-console.log(prueba);
- */
-function cambia(){
-
-    let lugarCompra =document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].value;
-
-    if(lugarCompra != 0){
-        mis_opts= eval("opt_"+ lugarCompra);
-        num_opts=mis_opts.length;
-        document.formulario1.locales.length = num_opts;
-        
-
-        for(i=0; i < num_opts; i++){
-            document.formulario1.locales.options[i].value=mis_opts[i];
-            document.formulario1.locales.options[i].text=mis_opts[i];
-        }
+                )
         }else{
-            document.formulario1.locales.length= 1;
-            document.formulario1.locales.options[0].value="-";
-            document.formulario1.locales.options[0].text="-";
-    }
-    document.formulario1.locales.options[0].selected = true;
+            /* console.log("no hay menu"); */
+        }
+        
 
+
+      }
+    )
+  )
 }
-
-/* CAMBIA LA IMAGEN DE LOS MENUS SEGUN EL RESTAURANTE SELECIONADO EN EL SELECT */
-function cambiarImagen(){
-let optionValue= document.getElementById("slcLocales");
-let valueOption= optionValue.value;
-let imagenPrecio= document.getElementById("imagen");
-
-/* OBJETO CON LA DIRECCION DE CADA IMAGEN SEGUN EL RESTAURANTE */
-let imagenesMenus = {
-    'Burger King': './img/menus/burguer_1.jpeg',
-    'Dulce Crepa' : './img/menus/dulce_crepa.jpg',
-    'El Globo': './img/globo.webp',
-    'Kentucky Fried Chicken':'./img/menus/kfc_2.jpeg',
-    'Pastes Kikos':'./img/menus/pastes_k.jpeg',
-    'Starbucks':'./img/menus/starbucks.jpeg',
-    'Pizza Hut':'./img/menus/pizza hut.png',
-    'Sukiya':'./img/menus/sikiya.jpg'
-}
-const imagenDefault = "./img/LOGO DELIVERYzhzs.webp";
-
-const loki = imagenesMenus[valueOption] || imagenDefault;
-imagenPrecio.src =`${loki}`
-}
-
- /*CODIGO PARA AGREGAR ARTICULOS EN UNA LISTA LOS VALORES CREAN UN NUEVO OBJETO Y */
-
-function agregarArticulo(){
-    function Articulo(nombreArt, cantidadArt){
-        this.nombreArt = nombreArt;
-        this.cantidadArt = cantidadArt;
-    }
-    let nombreArticulo = document.getElementById("art_input").value;
-    let cantidadArticulo = document.getElementById("cant_input").value; 
-    /* VARIABLE GLOBAL QUE CREA NUEVO OBJETO */
-    nuevoArticulo = new Articulo(nombreArticulo, cantidadArticulo);
-    creaArrayList(); 
-}
-
-    listaArticulos = [];
-function creaArrayList(){
-   listaArticulos.push(nuevoArticulo);
-    document.getElementById("tabla_art").innerHTML += '<tbody><td>'+nuevoArticulo.nombreArt+'</td> <td>'+nuevoArticulo.cantidadArt+'</td></tbody>';
-};
-
-
-
-let btnEnviarDatos = document.getElementById("enviar_whats");
-
-/* ESTA FUNCION RECORRE LA LISTA DE ARTICULOS PARA COLOCARLOS EN UN ARRAY PARA PODER CONCATENARLOS AL MENSAJE FINAL */
-btnEnviarDatos.addEventListener("click",nuevaListaArt); 
-nuevaListaArticulos = [];
-
-function nuevaListaArt(){
-    i=0;
-    while(i < listaArticulos.length){
-        nuevaLista = `%0A${listaArticulos[i].nombreArt}--${listaArticulos[i].cantidadArt}%0A`;
-        console.log(nuevaLista);
-        nuevaListaArticulos.push(nuevaLista);
-        i++;
-    }
-    enviarDatosWhats();
-        };
-
-/* ---------- FUNCION QUE CONSTRUYE EL MENSAJE PARA ENVIARLO CON LA AYUDA DE LA API DE WHATSSAP ---------- */
-function enviarDatosWhats(){
-
-    let nomCliente = document.getElementById("nom_cliente").value;
-    let local = slcLocales.value;
-    let lCom = document.formulario1.lugarCompra[document.formulario1.lugarCompra.selectedIndex].innerHTML;
-
-    let url ="https://api.whatsapp.com/send?phone=525578215947&text=*Repartiflash Confirmacion de Orden*%0A%0A*Nombre:*%0A" +nomCliente+ "%0A*Zonade Entrega:*%0A" +inputU.value+"%0A*Lugar de Compra:*%0A"+lCom+"%0A*Local:*%0A"+local+"%0A*Articulos:*%0A"+ nuevaListaArticulos;
-
-    window.open(url);
-};
-
-
 

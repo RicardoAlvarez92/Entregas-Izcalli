@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <title>En-Fa Formulario de servicio </title>
 </head>
-<body style="background-color: #eeeeee">
+<body>
     
 <!-- BARRA DE NAVEGACION -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #6d1f6d;">
@@ -39,17 +39,17 @@
     <section class="container-fluid">
         <div class="row justify-content-center">
 <!-- INICIA BLOQUE PARA ELEGIR ZONA DE ENTREGA -->
-            <div class="col-12 bg-white">
+            <div class="col-12 ">
                 <div class="row">
 <!-- TITULO zONAS DE ENTREGA -->
-                    <h4 class="card-title col-12 mt-1">
+                    <!-- <h4 class="card-title col-12 mt-1">
                         Zonas de Entrega
-                    </h4>
+                    </h4> -->
 <!-- INICIA ZONA QUE OCULTA LOS BOTONES ALSELECCIONAR -->
-                    <div data-toggle="collapse" data-target="#contenedor_zona_entrega"  class="col-12 container-fluid">
+                    <div data-toggle="collapse" data-target="#contenedor_zona_entrega"  class="col-12 container-fluid mt-3">
                         <div class="row justify-content-end">
                             <h5 class="col-8 text-muted">
-                                Elige tu Zona:
+                                Elige la zona de entrega:
                             </h5>
                             <div class="col-3 d-flex justify-content-center">
                                 <img class="" src="./img/iconos/icono-down.png" width="12" height="12"> 
@@ -66,7 +66,7 @@
                         <div class="row">
 
                             <div class="col-12 col-md-6 col-lg-4  ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div>
                                         <img class="img-fluid" src="./img/zonasEntrega/cofradia_1.png" alt="Cofradia I" width="60">
                                     </div>
@@ -75,7 +75,7 @@
                             </div>  
                             
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/cofradia_2.png" alt="Cofradia II" width="60">
                                     </div>
@@ -84,7 +84,7 @@
                             </div>
                             
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/cofradia_3.png" alt="Cofradia III" width="60">
                                     </div>
@@ -93,7 +93,7 @@
                             </div> 
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/cofradia_4.png" alt="Cofradia IV" width="60">
                                     </div>
@@ -102,7 +102,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/claustros.png" alt="Claustros San Miguel" width="60">
                                     </div>
@@ -111,7 +111,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/urbi_quinta.png" alt="Urbi Quinta" width="60">
                                     </div>
@@ -120,7 +120,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/jardines_1.png" alt="Jardines San Miguel I" width="60">
                                     </div>
@@ -129,7 +129,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/jardines_2.png" alt="Jardines San Miguel II" width="60">
                                     </div>
@@ -138,7 +138,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/jardines_3.png" alt="Jardines San Miguel III" width="60">
                                     </div>
@@ -147,7 +147,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/ex_hacienda.png" alt="Ex Hacienda San Miguel" width="60">
                                     </div>
@@ -156,7 +156,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/arboledas.png" alt="Arboledas San Miguel" width="60">
                                     </div>
@@ -165,7 +165,7 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4 ">
-                                <button onclick="eligeZonaEntrega(this)" class="btn bg-white container-fluid d-flex justify-content-start align-items-center mt-2">
+                                <button onclick="eligeZonaEntrega(this)" class="btn container-fluid d-flex justify-content-start align-items-center mt-2">
                                     <div class=" ">
                                         <img class="img-fluid" src="./img/zonasEntrega/rinconada_cuauti.png" alt="Rinconada Cuautitlan" width="60">
                                     </div>
@@ -182,9 +182,9 @@
 <!-- ZONA PARA SELECCIONAR CATEGORIA, RESTAURANTE Y MENU-->
             <div id="contenedor_categorias" class="col-12 container-fluid d-none" >
                 <div class="row justify-content-center">
-                    <h4 class=" card-title col-12 mt-1 ">
+                    <!-- <h4 class=" card-title col-12 mt-1 ">
                         Selección de restaurante
-                    </h4>
+                    </h4> -->
                     <div data-toggle="collapse" data-target="#categorias"  class="col-12 container-fluid">
                         <div class="row justify-content-end">
                             <h5 class="col-8 text-muted">
@@ -196,7 +196,7 @@
                         </div>
                     </div>
 <!-- DIV VACIO DONDE SE COLOCARA LA IMAGEN Y NOMBRE DE LA CATEGORIA ELEGIDA -->
-                    <div id="contenedor_categoriaSelec_vacio" class="">
+                    <div id="contenedor_categoriaSelec_vacio" >
                         
                     </div>
 
@@ -287,9 +287,11 @@
                     </div>
                 </div>
             </div>
+<!-- CONTENEDOR VACIOPARA INSERTAR TITULO SEGUN RESTAURANTE ELEGIDO -->            
+            <div id="contenedor_rest_vacio"></div>
 <!-- AQUI SE INSERTAN LOS BOTONES CON LA LISTA DE RESTAURANTES SEGUN LA CATEGORIA ELEGIDA --> 
             <div  class="col-12 container-fluid">
-                <div id="lista_restaurantes" class=" collapse-show row mb-3">
+                <div id="lista_restaurantes" class="collapse-show row mb-3">
   
                 </div>
             </div>
@@ -300,143 +302,74 @@
 <!-- lista para el menu -->
         <div id="lista_menu" class="row p-0 pb-3 bg-white d-none">
 <!-- SE MUESTRA EL MENU DEL RESTAURANTE SELECCIONADO -->
-                <div class="col-12 container-fluid mt-2">
-                    <div class="row justify-content-end">
-                        <h5 class="col-8 text-muted">
-                            Menu:
-                        </h5>
-                        <div class="col-3 d-flex justify-content-center ">
-                            <img class="d-none" src="./img/iconos/icono-down.png" width="12" height="12"> 
-                        </div>
+            <div class="col-12 container-fluid mt-2">
+                <div class="row justify-content-end">
+                    <h5 class="col-8 text-muted">
+                        Menu:
+                    </h5>
+                    <div class="col-3 d-flex justify-content-center ">
+                        <img class="d-none" src="./img/iconos/icono-down.png" width="12" height="12"> 
                     </div>
                 </div>
+            </div>
 <!-- collapese que se crea por cada categoria del menu del restaurante -->
-                <div data-toggle="collapse" data-target="#kfc1" class="card-header col-12 border d-flex justify-content-between align-items-center">
-                    <p class="d-flex align-items-center mb-0"><strong>Paquetes Clásicos</strong></p> 
-                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">
-                </div>
+            <!-- <div data-toggle="collapse" data-target="" class="card-header col-12 border d-flex justify-content-between align-items-center">
+                <p class="d-flex align-items-center mb-0"><strong>Paquetes Clásicos</strong></p> 
+                <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">
+            </div> -->
 
-                <div id="kfc1" class="collapse col-12 mt-1 pb-3">
- 
-                    <div class="row justify-content-center ">
+            <div id="categorias_menu_lista" class="col-12 mt-1 pb-3">
+
+                <!-- <div id="" class="collapse row justify-content-center"> -->
 <!-- crea un boton por cada articulo del menu segun su categoria -->
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        
-
-                       
-                       
-                       
-                       
-                       
-                
-
+                   <!--  <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                        <button class="btn container-fluid border rounded">
+                            <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
                     </div>
-                    
-                </div>
 
-<!-- collapse para los menus segun por categorias del restaurante -->
-
-                <div data-toggle="collapse" data-target="#kfc2" class="card-header col-12 border d-flex justify-content-between align-items-center">
-                    <p class="d-flex align-items-center mb-0"><strong>Big Box</strong></p>
-                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">
-                </div>
-
-                <div id="kfc2" class="collapse col-12 mt-1">
-
-                    <div class="row justify-content-center ">
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
-                            <button class="btn container-fluid border rounded">
-                                <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
-                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
-                                </div>
-                                <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
-                                </p>  
-                            </button>
-                        </div>
-               
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                        <button class="btn container-fluid border rounded">
+                            <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
                     </div>
-                
 
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
+                        <button class="btn container-fluid border rounded">
+                            <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                        <button class="btn container-fluid border rounded">
+                            <div class="d-flex justify-content-between align-items-center">   
+                                <h5 class="d-flex mb-1 mt-2 font-weight-bold">Paquete Clasico 8 Piezas</h5>
+                                <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$259</span></p>
+                            </div>
+                            <p class="d-flex justify-content-start mt-0 font-italic">8 piezas de pollo + 2 complementos familiares + 3 bísquets tradicionales
+                            </p>  
+                        </button>
+                    </div> -->
+                <!-- </div> -->
+                
             </div>
 
+        </div>
 
 <!-- TABLA LISTA DE ARTIULOS A COMPRAR -->
        
@@ -516,7 +449,7 @@
 
 
 <!-- JS PAGINA FORM -->
-    <!-- <script src="./js/Form.js"></script> -->
+    <script src="./js/Form.js"></script>
     <script src="./js/form3.js"></script>
 
 <!-- JS BOOTSTRAP 4.6 --> <!-- cambiar version de home -->   
