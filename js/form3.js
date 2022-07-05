@@ -93,6 +93,7 @@ function seleccionCategoria(CategoriaClickeada){
       restxCategoria = restaurante.categoria;
 
       if(restxCategoria == nombreCategoria){
+        creaBtnRest = () =>{
         hola = document.getElementById("lista_restaurantes");
         hola2 = document.createElement("div");
         hola2.setAttribute("class", "col-12 col-md-6 col-xl-4 mt-2");
@@ -112,6 +113,9 @@ function seleccionCategoria(CategoriaClickeada){
           </button>` 
     
         hola.appendChild(hola2); 
+        }
+      }else if(nombreCategoria == "Todo"){
+          creaBtnRest();
       }else{
         console.log("no eres " + nombreCategoria);
       }    

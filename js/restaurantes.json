@@ -112,7 +112,7 @@
         "categoria":"Postres",
         "ubicacion":"Cofradia IV",
         "imagen":"./img/portadaResta/luces_crepas_accion.png",
-        "dias_ap":["Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "dias_ap":["Mié","Jue","Vie","Sáb","Dom"],
         "apertura":"18:00",
         "cierre":"22:00",
         "menu":[
@@ -276,7 +276,7 @@
         "categoria":"Americana",
         "ubicacion":"Centro San Miguel",
         "imagen":"./img/portadaResta/kfc.jpg",
-        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "dias_ap":["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"],
         "apertura":"11:00",
         "cierre":"22:00",
         "menu":[
@@ -521,7 +521,7 @@
         "categoria":"Postres",
         "ubicacion":"Centro San Miguel",
         "imagen":"./img/portadaResta/pastes_kikos.png",
-        "dias_ap":["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "dias_ap":["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"],
         "apertura":"08:00",
         "cierre":"21:00",
         "menu":[
@@ -655,7 +655,7 @@
         "categoria":"Postres",
         "ubicacion":"Cofradia II",
         "imagen":"./img/portadaResta/pastes_kero.png",
-        "dias_ap":["lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"],
+        "dias_ap":["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"],
         "apertura":"12:00",
         "cierre":"21:00",
         "menu":[
