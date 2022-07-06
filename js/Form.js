@@ -39,6 +39,7 @@ function cargarMenuRest(rest){
     document.getElementById("lista_menu")
     .setAttribute("class", "row p-0 pb-3");
 
+
 /* ---------------------------------------------------------- */
     fetch(`./js/restaurantes.json`)
     .then(respuesta => respuesta.json())
@@ -57,98 +58,47 @@ function cargarMenuRest(rest){
   
                      categoriaMenu = document.createElement("div");
                      categoriaMenu.setAttribute("data-toggle", "collapse");
-                     categoriaMenu.setAttribute("data-target", `#${i}`);
+                     categoriaMenu.setAttribute("data-target", `#categoria_menu_${i}`);
                      categoriaMenu.setAttribute("class", "card-header col-12 border d-flex justify-content-between align-items-center");
                      categoriaMenu.innerHTML +=
                      `<p class="d-flex align-items-center mb-0"><strong>${menuCate}</strong></p> 
                      <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">`
- 
                      contMenuCateg.appendChild(categoriaMenu);
 
                      listaCategoria = document.createElement("div");
-                     listaCategoria.setAttribute("id",`${i}`)
-                     listaCategoria.setAttribute("class", "collapse-show col-12 mt-1 pb-3")
-                     listaCategoria.innerHTML=
-                     `<div>hola</div>`
-
+                     listaCategoria.setAttribute("id",`categoria_menu_${i}`)
+                     listaCategoria.setAttribute("class", "collapse col-12 mt-1 pb-3")
                      contMenuCateg.appendChild(listaCategoria);
-                     /* listaCategoria.innerHTML += */
-                    /*  `<div class="collapse row justify-content-center">
-                     ${ListaCate.forEach(platillo => {
+
+                     paltillosList = document.createElement("div");
+                     paltillosList.setAttribute("class", "justify-content-center");
+                     
+                     ListaCate.forEach(platillo => {
+                    
+                        paltillosList.innerHTML +=  
                         `<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
                             <button class="btn container-fluid border rounded">
                                 <div class="d-flex justify-content-between align-items-center">   
-                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">${platillo.nombreArt}</h5>
+                                    <h5 class="d-flex mb-1 mt-2"><strong class="d-flex justify-content-start">${platillo.nombreArt}</strong></h5>
                                     <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$${platillo.precio}</span></p>
                                 </div>
                                 <p class="d-flex justify-content-start mt-0 font-italic">${platillo.descripcion}
                                 </p>  
                             </button>
                          </div>`       
-                     })}
-                      </div>`
+                     })
 
-                     contMenuCateg.appendChild(listaCategoria); */
+                     listaCategoria.appendChild(paltillosList);  
+                            
             }
-/* 
-            menuRest.forEach(categoria =>{
-                listaCategoria = categoria.categoriaMenu;
-                artXcategoria = categoria.lista;
-                
-               let contenedor = document.getElementById("lista_menu");
-               let contListPlatillos = document.getElementById("categorias_menu_lista");
- 
-                    categoriaMenu = document.createElement("div");
-                    categoriaMenu.setAttribute("data-toggle", "collapese");
-                    categoriaMenu.setAttribute("data-target", `#${listaCategoria}`);
-                    categoriaMenu.setAttribute("class", "card-header col-12 border d-flex justify-content-between align-items-center");
-                    categoriaMenu.innerHTML +=
-                    `<p class="d-flex align-items-center mb-0"><strong>${listaCategoria}</strong></p> 
-                    <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">`
-
-                    contenedor.insertBefore(categoriaMenu, contListPlatillos); */
-
-/* desde qui revisar */
-                      /*   platilloMenu = document.createElement("div");
-                        platilloMenu.setAttribute("id",listaCategoria);
-                        platilloMenu.setAttribute("class", "collapse-show row justify-content-center");
-                        platilloMenu.innerHTML +=
-                        `<div>hola</div>`
-                        contListPlatillos.appendChild(platilloMenu) */
-
-                    /* artXcategoria.forEach(platillo =>{
-
-                        let contListPlatillos = document.getElementById("categorias_menu_lista");
-
-                        platilloMenu = document.createElement("div");
-                        platilloMenu.setAttribute("id",listaCategoria);
-                        platilloMenu.setAttribute("class", "collapse-show row justify-content-center");
-                        platilloMenu.innerHTML +=
-                            `<div class="col-12 col-md-6 col-lg-4 col-xl-3  mt-2">
-                                <button class="btn container-fluid border rounded">
-                                    <div class="d-flex justify-content-between align-items-center">   
-                                        <h5 class="d-flex mb-1 mt-2 font-weight-bold">${platillo.nombreArt}</h5>
-                                        <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$${platillo.precio}</span></p>
-                                    </div>
-                                    <p class="d-flex justify-content-start mt-0 font-italic">${platillo.descripcion}
-                                    </p>  
-                                </button>
-                            </div>`
-
-                            contListPlatillos.appendChild(platilloMenu)
-                    }) */
-                    
-                /* console.log(menuRest.length); */    
-           /*  }   
-                )
-        }else{ */
-            /* console.log("no hay menu"); */
         }
-        
-
-
       }
     )
   )
 }
+
+hola = document.getElementById("lista_menu");
+hola2 = hola.children;
+
+console.log(hola2.length);
 
