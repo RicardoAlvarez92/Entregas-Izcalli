@@ -47,7 +47,50 @@ function cargarMenuRest(rest){
         
         if(restaurante.nombre == nombreRest){
             menuRest = restaurante.menu;
+            
+            for(i=0;i<menuRest.length;i++){
+                menuCate = menuRest[i].categoriaMenu;
+                ListaCate = menuRest[i].lista;
 
+                let contMenuCateg = document.getElementById("lista_menu");
+                /* let contListPlati = document.getElementById("categorias_menu_lista"); */
+  
+                     categoriaMenu = document.createElement("div");
+                     categoriaMenu.setAttribute("data-toggle", "collapse");
+                     categoriaMenu.setAttribute("data-target", `#${i}`);
+                     categoriaMenu.setAttribute("class", "card-header col-12 border d-flex justify-content-between align-items-center");
+                     categoriaMenu.innerHTML +=
+                     `<p class="d-flex align-items-center mb-0"><strong>${menuCate}</strong></p> 
+                     <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">`
+ 
+                     contMenuCateg.appendChild(categoriaMenu);
+
+                     listaCategoria = document.createElement("div");
+                     listaCategoria.setAttribute("id",`${i}`)
+                     listaCategoria.setAttribute("class", "collapse-show col-12 mt-1 pb-3")
+                     listaCategoria.innerHTML=
+                     `<div>hola</div>`
+
+                     contMenuCateg.appendChild(listaCategoria);
+                     /* listaCategoria.innerHTML += */
+                    /*  `<div class="collapse row justify-content-center">
+                     ${ListaCate.forEach(platillo => {
+                        `<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+                            <button class="btn container-fluid border rounded">
+                                <div class="d-flex justify-content-between align-items-center">   
+                                    <h5 class="d-flex mb-1 mt-2 font-weight-bold">${platillo.nombreArt}</h5>
+                                    <p class="d-flex align-items-start mb-0 mt-2 badge-pill badge-warning"><span class="font-weight-bold">$${platillo.precio}</span></p>
+                                </div>
+                                <p class="d-flex justify-content-start mt-0 font-italic">${platillo.descripcion}
+                                </p>  
+                            </button>
+                         </div>`       
+                     })}
+                      </div>`
+
+                     contMenuCateg.appendChild(listaCategoria); */
+            }
+/* 
             menuRest.forEach(categoria =>{
                 listaCategoria = categoria.categoriaMenu;
                 artXcategoria = categoria.lista;
@@ -63,7 +106,7 @@ function cargarMenuRest(rest){
                     `<p class="d-flex align-items-center mb-0"><strong>${listaCategoria}</strong></p> 
                     <img src="./img/iconos/icono-down.png" alt="down" width="10" height="10">`
 
-                    contenedor.insertBefore(categoriaMenu, contListPlatillos);
+                    contenedor.insertBefore(categoriaMenu, contListPlatillos); */
 
 /* desde qui revisar */
                       /*   platilloMenu = document.createElement("div");
@@ -96,9 +139,9 @@ function cargarMenuRest(rest){
                     }) */
                     
                 /* console.log(menuRest.length); */    
-            }   
+           /*  }   
                 )
-        }else{
+        }else{ */
             /* console.log("no hay menu"); */
         }
         
