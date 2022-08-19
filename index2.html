@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <title>Lista de Restaurantes</title>
+    <style>
+        body{
+            background-color: #f7f6f6;
+        }
+        table thead{
+            background-color: #000;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+   
+    <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+        <h1 class="text-center">Lista de Restaurantes</h1>
+
+<!-- Button New Restaurant -->     
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"><img src="./img/icon/agregar.png" alt="Agregar" width="30"> Nuevo Restaurante</button>
+<!-- Table index restaurant -->        
+        <table id="tablaRest" class="table mt-3 table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Ubicacion</th>
+                    <th>Categoria</th>
+                    <th>Dias Abierto</th>
+                    <th>Horario Apertura</th>
+                    <th>Horario de Cierre</th>
+                    <th>Editar</th>
+                    <th>Borrar</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyRest">
+            </tbody>
+            <tbody id="tbodyRest_2" class="d-none">
+            </tbody>
+        </table>  
+    </div>
+
+<!--Modal create restaurant --> 
+<div id="modalRest" class="modal fade"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Nuevo Restaurante</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body container-fluid">
+        <form id="formRest" class="row">
+            <div class="col-12 mb-3">
+                <label for="nombreRest" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreRest">
+            </div>
+
+            <div class="col-12 mb-3">
+                <label for="ubicacionRest" class="form-label">Ubicacion </label>
+                <input type="text" class="form-control" id="ubicacionRest">
+            </div>
+            <div class="col-12 mb-3">
+                <label for="imagenRest" class="form-label">Imagen</label>
+                <input class="form-control" type="text" id="imagenRest"> 
+            </div>
+            <div class="col-6 mb-3">
+                <label for="categoriaRest" class="form-label">Categoria</label>
+                <select class="form-select" id="categoriaRest">
+                    <option selected>Categoria</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Mexicana">Mexicana</option>
+                    <option value="Americana">Americana</option>
+                    <option value="Asiatica">Asiatica</option>
+                    <option value="Postres">Postres</option>
+                </select>
+            </div>
+            <div class="col-6 mb-3">
+                <label for="diasRest" class="form-label">Dias Abierto </label>
+                <input type="text" class="form-control" id="diasRest">
+            </div>
+
+            <div class="col-6 mb-3">
+                <label for="aperturaRest" class="form-label">Apertura</label>
+                <input type="text" class="form-control" id="aperturaRest">
+            </div>
+
+            <div class="col-6 mb-3">
+                <label for="cierreRest" class="form-label">Cierre</label>
+                <input type="text" class="form-control" id="cierreRest">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Index.js -->
+    <script src="./index.js"></script>
+    <!-- Alertify js -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!-- Bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
